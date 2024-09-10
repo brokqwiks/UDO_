@@ -1,0 +1,26 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_49_21)">
+<g filter="url(#filter0_i_49_21)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28.344 25H67.4928C70.0512 25 72.264 25 74.0256 25.1632C75.8064 25.3264 77.8464 25.696 79.5936 26.968C81.96 28.6912 83.4864 31.3312 83.7936 34.24C84.0192 36.3904 83.328 38.3392 82.5792 39.9664C81.84 41.5744 80.7312 43.4896 79.4544 45.7072L51.6624 93.88C51.2836 94.538 50.7381 95.0846 50.0808 95.4647C49.4235 95.8447 48.6776 96.0448 47.9184 96.0448C47.1591 96.0448 46.4133 95.8447 45.756 95.4647C45.0987 95.0846 44.5532 94.538 44.1744 93.88L16.3824 45.7072C15.1056 43.4896 14.0016 41.5744 13.2624 39.9664C12.5136 38.3392 11.8176 36.3904 12.0432 34.24C12.1944 32.8012 12.6465 31.4103 13.37 30.1575C14.0936 28.9047 15.0725 27.818 16.2432 26.968C17.9952 25.696 20.0304 25.3264 21.8112 25.1632C23.5728 25 25.7952 25 28.344 25ZM21.2736 33.9952C20.9297 34.2644 20.7042 34.6569 20.6448 35.0896C20.6592 35.1712 20.7312 35.5312 21.1056 36.352C21.6624 37.552 22.56 39.1216 23.9664 41.56L43.5984 75.5872V33.64H28.5408C25.728 33.64 23.9184 33.64 22.6032 33.7648C21.7008 33.8464 21.3552 33.9664 21.2736 33.9952ZM52.2384 33.64V75.5872L71.8704 41.5552C73.2768 39.1216 74.1744 37.552 74.7312 36.352C75.1104 35.536 75.1824 35.1712 75.192 35.0896C75.1326 34.6569 74.907 34.2644 74.5632 33.9952C74.1327 33.8643 73.6878 33.7869 73.2384 33.7648C71.9184 33.6448 70.1088 33.64 67.296 33.64H52.2384Z" fill="url(#paint0_linear_49_21)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_i_49_21" x="12" y="25" width="71.837" height="75.0449" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="6"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_49_21"/>
+</filter>
+<linearGradient id="paint0_linear_49_21" x1="47.9185" y1="25" x2="47.9185" y2="96.0448" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0066FF"/>
+<stop offset="1" stop-color="#00FFFF"/>
+</linearGradient>
+<clipPath id="clip0_49_21">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+</defs>
+</svg>

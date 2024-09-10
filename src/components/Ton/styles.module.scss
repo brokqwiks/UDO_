@@ -1,0 +1,91 @@
+.dotted{
+    height: 4px; /* Высота линии */
+    background: linear-gradient(to right, #0066FF 30px, transparent 30px, transparent 60px, #00FFFF 60px);
+    background-size: 60px 4px; /* Ширина одного штриха и промежутка, высота линии */
+    margin: -200px;
+}
+
+.ton_block{
+    display: grid;
+    width: 100%;
+    grid-gap: 90px;
+}
+
+.header_block{
+    display: grid;
+    grid-template-columns: 640px 1fr;
+}
+
+.header_block h1{
+    font-size: 80px;
+}
+
+.header_block h1 span{
+    background-image: linear-gradient(90deg, #0066FF, #00FFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+.header_block img{
+    align-self: center;
+    position: relative;
+    top: -15%;
+}
+
+.cards_block{
+    display: grid;
+    grid-gap: 150px;
+    grid-template-columns: 280px 280px 280px;
+}
+
+.description_block {
+    display: grid;
+}
+
+.description_block span{
+    background-image: linear-gradient(90deg, #0066FF, #00FFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    font-weight: 900;
+}
+
+.description_block p{
+    padding-top: 50px;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.ton_block button{
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    background: #018EFF;
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    border: none;
+    display: grid;
+    grid-template-columns: 200px 150px;
+    justify-items: center;
+    align-items: center;
+    text-align: end;
+    padding-left: 50px;
+    transition: .5s;
+}
+
+.ton_block button:hover{
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+    background: white;
+    color: black;
+    cursor: pointer;
+    padding-left: 75px;
+}
+
+.ton_block button img{
+    background: none;
+    padding-right: 80px;
+    
+}

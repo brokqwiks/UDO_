@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24" height="24" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+    <linearGradient id="gradient">
+        <stop offset="0%" stop-color="#0066FF"/>
+        <stop offset="100%" stop-color="#00FFFF"/>
+    </linearGradient>
+
+    <defs>
+        <clipPath id="__lottie_element_229"><rect width="24" height="24" x="0" y="0"></rect></clipPath>
+    </defs>
+    <g clip-path="url(#__lottie_element_229)">
+    <g transform="matrix(1.0000349283218384,0,0,1.0000349283218384,-0.00041920208605006337,-0.00041920208605006337)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,12,16.5)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="url(#gradient)" stroke-opacity="1" stroke-width="1.5" d=" M0,-3.5 C4.418000221252441,-3.5 8,-1.9329999685287476 8,0 C8,1.9329999685287476 4.418000221252441,3.5 0,3.5 C-4.418000221252441,3.5 -8,1.9329999685287476 -8,0 C-8,-1.9329999685287476 -4.418000221252441,-3.5 0,-3.5z"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,7)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(0,136,204)" stroke-opacity="1" stroke-width="1.5" d=" M0,3 C1.656999945640564,3 3,1.656999945640564 3,0 C3,-1.656999945640564 1.656999945640564,-3 0,-3 C-1.656999945640564,-3 -3,-1.656999945640564 -3,0 C-3,1.656999945640564 -1.656999945640564,3 0,3z"></path>
+    </g></g></g>
+</svg>

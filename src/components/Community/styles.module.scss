@@ -1,0 +1,54 @@
+.community_header{
+    display: grid;
+    grid-template-columns: 470px 1fr;
+}
+
+.community_header h1{
+    font-size: 80px;
+}
+
+.user_icon{
+    width: 100px;
+    height: 100px;
+    fill: linea;
+}
+
+.community_main{
+    display: grid;
+    grid-gap: 130px;
+}
+
+.community_cards{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px 1fr;
+    grid-gap: 145px;
+}
+
+.contact_card{
+    grid-column: 2;
+    justify-self: center;
+    width: 600px;
+    height: 100px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+    display: grid;
+    width: 100%;
+    transition: .5s;
+    grid-template-columns: 270px 300px;
+    text-align: right;
+    align-items: center;
+    grid-gap: 20px;
+    position: relative;
+    top: -50px;
+    cursor: pointer;
+}
+
+.contact_card a{
+    font-size: 35px;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+}
