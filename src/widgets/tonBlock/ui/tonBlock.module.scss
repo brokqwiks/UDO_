@@ -1,0 +1,89 @@
+.tonBlock {
+    width: 1442px;
+    margin: 0 auto;
+    height: 1395px;
+
+    button {
+        display: flex;
+        align-items: center;
+        width: 350px;
+        height: 100px;
+        padding-left: 50px;
+        font-size: 35px;
+        font-weight: 800;
+        background: #018EFF;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        transition: .5s;
+
+        &:hover {
+            box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+            background: white;
+            color: black;
+            cursor: pointer;
+            padding-left: 90px;
+        }
+
+        img {
+            background: none;
+            padding-left: 20px;
+        }
+    }
+}
+
+.headerBlock {
+    display: block;
+
+    h1 {
+        margin-bottom: 90px;
+        font-size: 80px;
+
+        span {
+            background-image: linear-gradient(90deg, #0066FF, #00FFFF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            white-space: nowrap;
+        }
+    }
+}
+
+.cardsBlock {
+    img {
+        width: 276px;
+        height: 385px;
+        margin-right: 157px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+}
+
+
+.descriptionBlock {
+    span {
+        font-weight: 900;
+        background-image: linear-gradient(90deg, #0066FF, #00FFFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: nowrap;
+    }
+
+    p {
+        width: 60%;
+        margin-top: 100px;
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: 700;
+
+        margin-bottom: 40px;
+        font-weight: bold;
+        color: #333;
+
+        &:last-child {
+            margin-top: 65px;
+        }
+    }
+}
