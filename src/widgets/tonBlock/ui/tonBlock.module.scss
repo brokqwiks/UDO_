@@ -33,9 +33,11 @@
 }
 
 .headerBlock {
-    display: block;
+    display: flex;
+    align-items: baseline;
 
     h1 {
+        margin-right: 19px;
         margin-bottom: 90px;
         font-size: 80px;
 

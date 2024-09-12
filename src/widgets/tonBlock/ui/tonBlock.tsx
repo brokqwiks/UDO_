@@ -3,6 +3,7 @@ import telegram_wallet_img from '../../../../public/telegram_wallet_block.png'
 import tonkeeper_wallet_img from '../../../../public/tonkeeper_wallet_block.png'
 import tonconnect_img from '../../../../public//tonconnect_block.png'
 import toncoin_icon3 from '../../../../public/toncoin3.svg'
+import toncoin from '../../../../public/toncoin.svg'
 import { Button } from '../../../shared/ui/button/button'
 
 export const TonBlock = () => {
@@ -10,6 +11,7 @@ export const TonBlock = () => {
         <section className={styles.tonBlock}>
             <div className={styles.headerBlock}>
                 <h1>Only <span>TON Wallet</span></h1>
+                <img src={toncoin} alt="" />
             </div>
             <div className={styles.cardsBlock}>
                 <img src={telegram_wallet_img} alt="" />
