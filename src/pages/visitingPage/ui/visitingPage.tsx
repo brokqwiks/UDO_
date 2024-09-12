@@ -3,7 +3,8 @@ import { Header } from "../../../widgets/header";
 import { MainStart } from "../../../widgets/mainStart";
 import { About } from "../../../widgets/about";
 import { Community } from "../../../widgets/community";
-import { TonBlock } from "../../../widgets/tonBlock";
+import { TonBlock } from "../../../widgets/tonBlock/ui/tonBlock";
+
 export const VisitingPage = () => {
   return (
     <div>

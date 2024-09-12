@@ -24,9 +24,7 @@ export const About = () => {
           </p>
         </div>
         <div className={styles.aboutButtons}>
-          <Button>
-            Fast <img src={rocket} alt="" />
-          </Button>
+          <Button>Fast</Button>
           <Button>Safe</Button>
           <Button>Support</Button>
         </div>
