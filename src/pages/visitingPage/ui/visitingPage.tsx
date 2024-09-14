@@ -4,6 +4,7 @@ import { MainStart } from "../../../widgets/mainStart";
 import { About } from "../../../widgets/about";
 import { Community } from "../../../widgets/community";
 import { TonBlock } from "../../../widgets/tonBlock/ui/tonBlock";
+import RoadmapAndPartners from "../../../widgets/RoadmapAndPartners/RoadmapAndPartners";
 
 export const VisitingPage = () => {
   return (
@@ -16,6 +17,7 @@ export const VisitingPage = () => {
       </div>
       <span className={styles.dotted}></span>
       <TonBlock />
+      <RoadmapAndPartners/>
     </div>
   );
 };
