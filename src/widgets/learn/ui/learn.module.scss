@@ -1,0 +1,109 @@
+.learnContainer {
+    padding-top: 109px;
+    margin-bottom: 160px;
+    color: white;
+}
+
+.learnHeading {
+    display: flex;
+    margin-bottom: 65px;
+
+    h2 {
+        font-size: 90px;
+        margin-right: 33px;
+    }
+
+    img {
+        width: 109px;
+        height: 109px;
+    }
+}
+
+.learnProtectText {
+    width: 570px;
+    height: 59px;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 115px;
+}
+
+.learnContent {
+    display: flex;
+    padding-top: 70px;
+    background: #262732;
+    border-radius: 10px;
+
+
+    .learnBtnsAndFAQ {
+        padding-bottom: 10px;
+
+        p {
+            height: 59px;
+            padding-left: 46px;
+            font-size: 15px;
+            font-weight: 500;
+
+            a {
+                text-decoration: none;
+                color: #0066FF;
+            }
+        }
+
+        .learnBtns {
+            margin-bottom: 182px;
+            margin-right: 75px;
+
+            button {
+                display: flex;
+                align-items: center;
+                padding-left: 46px;
+                width: 431px;
+                height: 88px;
+                font-size: 25px;
+                font-weight: 700;
+                color: white;
+                background: transparent;
+                cursor: pointer;
+                transition: .2s ease-in-out;
+
+                &:focus {
+                    background: #2E2F3E;
+                }
+
+                img {
+                    width: 56px;
+                    height: 56px;
+                    margin-right: 38px;
+                }
+
+            }
+
+        }
+    }
+}
+
+.learnInfo {
+    margin-right: 160px;
+
+    h3 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+
+    p {
+        width: 331px;
+        margin-bottom: 36px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+.learnImg {
+    img {
+        width: 298px;
+        height: 400px;
+        border-radius: 20px;
+        background: white;
+    }
+}

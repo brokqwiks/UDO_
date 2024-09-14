@@ -24,13 +24,14 @@ export const About = () => {
           </p>
         </div>
         <div className={styles.aboutButtons}>
-          <Button>Fast</Button>
+          <Button>Fast <img loading="lazy" src={rocket} alt="" /></Button>
           <Button>Safe</Button>
           <Button>Support</Button>
         </div>
       </div>
       <div className={styles.gifBlock}>
         <img
+          loading="lazy"
           src={gif_array[Math.floor(Math.random() * gif_array.length)]}
           alt=""
         />

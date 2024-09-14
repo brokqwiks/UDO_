@@ -26,23 +26,42 @@
         color: #333;
 
     }
+
+    button {
+        width: 45%;
+        height: 70px;
+        margin: 0 auto;
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        border-radius: 15px;
+        font-weight: 700;
+        transition: .5s;
+
+        &:hover {
+            background: white;
+            color: black;
+            box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+        }
+    }
 }
 
-
-.logoText {
-    font-size: 110px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    width: fit-content;
-    text-align: center;
-    justify-self: center;
-}
-
-.container {
+.logoUdoContainer {
     display: inline-block;
     height: 170px;
+
+    h1 {
+        font-size: 110px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        text-align: center;
+        justify-self: center;
+    }
 }
 
 .highlight {
@@ -53,24 +72,4 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
-}
-
-.openButton {
-    width: 45%;
-    height: 70px;
-    margin: 0 auto;
-    background-color: black;
-    color: white;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    border-radius: 15px;
-    font-weight: 700;
-    transition: .5s;
-
-    &:hover {
-        background: white;
-        color: black;
-        box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
-    }
 }
