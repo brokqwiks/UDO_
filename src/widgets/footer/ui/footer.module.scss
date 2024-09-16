@@ -4,21 +4,21 @@
 
     .footerContant {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-top: 56px;
 
         h2 {
-            font-size: 52px;
+            font-size: 25px;
             color: #F3F4FF;
-            margin-right: 94px;
         }
 
         img {
-            margin-right: 40px;
+            margin-right: 35px;
         }
 
         p {
-            margin-left: 53px;
-            font-size: 50px;
+            font-size: 25px;
             font-weight: 800;
             color: #F3F4FF;
         }

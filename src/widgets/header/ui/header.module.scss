@@ -1,6 +1,7 @@
 .header {
     position: relative;
     padding: 20px 0;
+    margin-bottom: 180px;
 }
 
 .container {
@@ -14,9 +15,9 @@
 .logo {
     align-self: center;
     h1 {
-        font-size: 45px;
+        font-size: 50px;
         color: #000;
-        font-weight: 900;
+        font-weight: 800;
         text-align: left;
         align-self: center;
     }
@@ -37,9 +38,10 @@
             padding: 10px;
 
             a {
+                
                 text-decoration: none;
                 color: #000;
-                font-weight: 700;
+                font-weight: 800;
                 transition: .5s;
                 &:hover {
                     color: rgba(0, 0, 0, 0.6)

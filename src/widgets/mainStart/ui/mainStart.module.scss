@@ -2,8 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin-top: 100px;
     margin-bottom: 220px;
 
 }
@@ -11,18 +9,12 @@
 .mainContent {
     text-align: center;
 
-    h1 {
-        font-family: "Roboto Mono", monospace;
-        font-optical-sizing: auto;
-        font-style: normal;
-    }
-
     p {
         width: 600px;
         margin: 0 auto;
-        margin-bottom: 40px;
+        margin-bottom: 64px;
         font-size: 30px;
-        font-weight: bold;
+        font-weight: 600;
         color: #333;
 
     }
@@ -53,22 +45,26 @@
     height: 170px;
 
     h1 {
-        font-size: 110px;
+        font-size: 90px;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 34px;
         white-space: nowrap;
         overflow: hidden;
         width: fit-content;
         text-align: center;
         justify-self: center;
+        font-family: "Roboto Mono", monospace;
+        font-optical-sizing: auto;
+        font-style: normal;
     }
 }
 
 .highlight {
     display: block;
-    font-size: 100px;
+    margin-bottom: 28px;
+    font-size: 90px;
     font-weight: bold;
-    background-image: linear-gradient(90deg, #0066FF, #00FFFF);
+    background-image: linear-gradient(90deg, #0066FF, #01D1FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;

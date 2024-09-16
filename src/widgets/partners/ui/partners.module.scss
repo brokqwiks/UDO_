@@ -1,15 +1,22 @@
 .partnersContainer {
-    margin-bottom: 311px;
-    h2 {
-        margin-bottom: 120px;
-        font-size: 90px;
-        font-weight: 800;
-        color: #fff;
+    padding-top: 156px;
+    margin-bottom: 260px;
+
+    .partnersHeading{
+        display: flex;
+        h2 {
+            margin-right: 30px;
+            font-size: 80px;
+            font-weight: 800;
+            color: #fff;
+        }
+    
     }
 
-    img {
-        width: 1058px;
+    .allPartners {
         max-width: 100%;
+        height: 507px;
+        margin-top: 134px;
         aspect-ratio: 2.13;
         object-fit: contain;
         object-position: center;

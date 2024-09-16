@@ -1,22 +1,30 @@
 .visitingPageWhiteContainer{
     display: block;
-    width: 1442px;
+    width: 1428px;
     margin: 0 auto;
 }
 .visitingPageBlackContainer{
     display: block;
+    padding-top: 24px;
     background-color: #0e0f1d;
     .visitingPageBlack{
-        width: 1442px;
+        width: 1428px;
         margin: 0 auto;
     }
 }
-.dotted{
+.dottedBlue{
     display: block;
     width: 100%;
     margin: 0;
     height: 4px; 
-    background: linear-gradient(to right, #0066FF 30px, transparent 30px, transparent 60px, #00FFFF 60px);
+    background: linear-gradient(to right, #0170FF 30px, transparent 30px, transparent 60px, #00FFFF 60px);
     background-size: 60px 4px; 
-    margin-bottom: 90px;
+}
+.dottedWhite{
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 4px; 
+    background: linear-gradient(to right, white 30px, transparent 30px, transparent 60px, #00FFFF 60px);
+    background-size: 60px 4px; 
 }

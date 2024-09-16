@@ -31,10 +31,7 @@ export const TonBlock = () => {
       <div className={styles.descriptionBlock}>
         <p>
           <span>TON Connect</span> allows you to send requests to your wallet to
-          confirm a transaction
-        </p>
-        <p>
-          There is no way we can send the transaction without your signature
+          confirm a transaction.
         </p>
       </div>
       <Button>

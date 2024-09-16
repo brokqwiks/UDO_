@@ -1,10 +1,11 @@
 .communitySection{
-    margin-bottom: 194px;
+    margin-bottom: 204px;
+    padding-top: 156px;
 }
 
 .communityHeader {
     display: flex;
-    margin-bottom: 114px;
+    margin-bottom: 134px;
     h1 {
         font-size: 80px;
         margin-right: 24px;
@@ -12,9 +13,8 @@
 }
 
 .userIcon {
-    width: 100px;
-    height: 100px;
-    fill: linea;
+    width: 96px;
+    height: 96px;
 }
 
 .communityCards {
@@ -26,10 +26,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 494px;
-    height: 100px;
+    width: 405px;
+    height: 98px;
     margin: 0 auto;
-    margin-top: 69px;
+    margin-top: 114px;
     border-radius: 20px;
     background: white;
     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
@@ -38,9 +38,10 @@
     
     a {
         padding-right: 32px;
-        font-size: 35px;
-        font-weight: 800;
+        font-size: 40px;
+        font-weight: 700;
         text-decoration: none;
         color: black;
+        background: #FFFCFC;
     }
 }

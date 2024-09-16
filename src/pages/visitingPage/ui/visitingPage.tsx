@@ -15,18 +15,35 @@ export const VisitingPage = () => {
       <div className={styles.visitingPageWhiteContainer}>
         <Header />
         <MainStart />
+      </div>
+
+      <div className={styles.visitingPageWhiteContainer}>
         <About />
+      </div>
+
+
+      <div className={styles.visitingPageWhiteContainer}>
         <Community />
       </div>
 
-      <span className={styles.dotted}></span>
+      <span className={styles.dottedBlue}></span>
 
       <TonBlock />
       <div className={styles.visitingPageBlackContainer}>
         <div className={styles.visitingPageBlack}>
-          <Learn/>
+          <Learn />
+        </div>
+        <span className={styles.dottedWhite}></span>
+
+        <div className={styles.visitingPageBlack}>
           <RoadMap />
+        </div>
+        <span className={styles.dottedWhite}></span>
+
+        <div className={styles.visitingPageBlack}>
           <Partners />
+        </div>
+        <div className={styles.visitingPageBlack}>
           <Footer />
         </div>
       </div>

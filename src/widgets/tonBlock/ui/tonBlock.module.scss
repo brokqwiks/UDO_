@@ -1,16 +1,16 @@
 .tonBlock {
-    width: 1442px;
+    width: 1428px;
     margin: 0 auto;
-    height: 1395px;
-
+    margin-top: 156px;
+    margin-bottom: 204px;
     button {
         display: flex;
         align-items: center;
-        width: 350px;
-        height: 100px;
+        width: 329px;
+        height: 84px;
         padding-left: 50px;
-        font-size: 35px;
-        font-weight: 800;
+        font-size: 36px;
+        font-weight: 700;
         background: #018EFF;
         color: white;
         border: none;
@@ -35,14 +35,13 @@
 .headerBlock {
     display: flex;
     align-items: baseline;
+    margin-bottom: 134px;
 
     h1 {
         margin-right: 19px;
-        margin-bottom: 90px;
         font-size: 80px;
-
         span {
-            background-image: linear-gradient(90deg, #0066FF, #00FFFF);
+            background-image: linear-gradient(90deg, #0066FF, #01D1FF);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             white-space: nowrap;
@@ -51,10 +50,11 @@
 }
 
 .cardsBlock {
+    margin-bottom: 42px;
     img {
-        width: 276px;
-        height: 385px;
-        margin-right: 157px;
+        width: 431px;
+        height: 598px;
+        margin-right: 67px;
         
         &:last-child {
             margin-right: 0;
@@ -74,18 +74,17 @@
     }
 
     p {
-        width: 60%;
-        margin-top: 100px;
+        width: 80%;
         font-size: 40px;
         line-height: 60px;
         font-weight: 700;
-
         margin-bottom: 40px;
         font-weight: bold;
         color: #333;
 
         &:last-child {
-            margin-top: 65px;
+            margin-top: 38px;
+            margin-bottom: 52px;
         }
     }
 }

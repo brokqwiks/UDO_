@@ -1,12 +1,12 @@
 .learnContainer {
-    padding-top: 109px;
-    margin-bottom: 160px;
+    padding-top: 156px;
+    margin-bottom: 204px;
     color: white;
 }
 
 .learnHeading {
     display: flex;
-    margin-bottom: 65px;
+    margin-bottom: 24px;
 
     h2 {
         font-size: 90px;
@@ -20,18 +20,16 @@
 }
 
 .learnProtectText {
-    width: 570px;
-    height: 59px;
-    font-size: 50px;
-    font-weight: 700;
-    margin-bottom: 115px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 71px;
 }
 
 .learnContent {
     display: flex;
     padding-top: 70px;
     background: #262732;
-    border-radius: 10px;
+    border-radius: 20px;
 
 
     .learnBtnsAndFAQ {
@@ -50,30 +48,33 @@
         }
 
         .learnBtns {
-            margin-bottom: 182px;
-            margin-right: 75px;
+            margin-bottom: 200px;
+            margin-right: 110px;
 
             button {
                 display: flex;
                 align-items: center;
                 padding-left: 46px;
-                width: 431px;
-                height: 88px;
+                width: 430px;
+                height: 89px;
                 font-size: 25px;
                 font-weight: 700;
                 color: white;
+                border-right: 6px solid #3C4173;
                 background: transparent;
                 cursor: pointer;
                 transition: .2s ease-in-out;
 
                 &:focus {
                     background: #2E2F3E;
+                    border: none;
+                    border-right: 6px solid #2562FF;
                 }
 
                 img {
                     width: 56px;
                     height: 56px;
-                    margin-right: 38px;
+                    margin-right: 46px;
                 }
 
             }
@@ -83,19 +84,20 @@
 }
 
 .learnInfo {
-    margin-right: 160px;
+    margin-right: 168px;
 
     h3 {
         font-size: 30px;
         font-weight: 700;
-        margin-bottom: 18px;
+        margin-bottom: 26px;
     }
 
     p {
-        width: 331px;
+        width: 310px;
         margin-bottom: 36px;
         font-size: 20px;
         font-weight: 600;
+        line-height: 30px;
     }
 }
 

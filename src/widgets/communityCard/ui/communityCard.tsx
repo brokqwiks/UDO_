@@ -15,7 +15,7 @@ export const CommunityCard = ({ icon, name, descr, url, aboutBtn }: TTypeCard) =
             <img loading="lazy" src={icon} alt="" />
             <h1>{name}</h1>
             <p>{descr}</p>
-            <a href={url} target='_blank'>
+            <a href={url} target='_blank' id='123'>
                 {aboutBtn}
                 <span
                     style={{
