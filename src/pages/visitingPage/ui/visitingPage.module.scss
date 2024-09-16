@@ -1,7 +1,15 @@
-.visitingPage{
+.visitingPageWhiteContainer{
     display: block;
     width: 1442px;
     margin: 0 auto;
+}
+.visitingPageBlackContainer{
+    display: block;
+    background-color: #0e0f1d;
+    .visitingPageBlack{
+        width: 1442px;
+        margin: 0 auto;
+    }
 }
 .dotted{
     display: block;

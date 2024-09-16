@@ -11,7 +11,7 @@ export const Community = () => {
       <section className={styles.communitySection}>
         <div className={styles.communityHeader}>
           <h1>Community</h1>
-          <img src={user_icon} alt="" className={styles.userIcon} />
+          <img loading="lazy" src={user_icon} alt="" className={styles.userIcon} />
         </div>
         <div className={styles.communityCards}>
           <CommunityCard
@@ -40,7 +40,7 @@ export const Community = () => {
           <a href={"https://t.me/brokqwiks"} target="_blank">
             Contact Us
           </a>
-          <img src={question_icon} alt="" />
+          <img loading="lazy" src={question_icon} alt="" />
         </div>
       </section>
     );

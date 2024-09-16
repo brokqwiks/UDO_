@@ -8,11 +8,11 @@ export const CommunityCard = ({ icon, name, descr, url, aboutBtn }: TTypeCard) =
 
     return (
         <div
-            className={styles.card_main}
+            className={styles.cardMain}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
         >
-            <img src={icon} alt="" />
+            <img loading="lazy" src={icon} alt="" />
             <h1>{name}</h1>
             <p>{descr}</p>
             <a href={url} target='_blank'>

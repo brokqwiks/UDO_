@@ -1,0 +1,26 @@
+.footer {
+    padding-bottom: 81px;
+    border-top: 3px solid white;
+
+    .footerContant {
+        display: flex;
+        margin-top: 56px;
+
+        h2 {
+            font-size: 52px;
+            color: #F3F4FF;
+            margin-right: 94px;
+        }
+
+        img {
+            margin-right: 40px;
+        }
+
+        p {
+            margin-left: 53px;
+            font-size: 50px;
+            font-weight: 800;
+            color: #F3F4FF;
+        }
+    }
+}
