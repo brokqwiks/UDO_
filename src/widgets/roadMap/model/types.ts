@@ -2,16 +2,16 @@ export type TQuarters = {
   id: number;
   quarter: string;
   milestones: Array<{
-    iconSrc: string;
+    iconSrc?: string;
     text: string;
   }>;
 };
 export type TMilestoneProps = {
-    iconSrc: string;
+    iconSrc: string | undefined;
     text: string;
   }
 export type TMilestoneData = {
-  iconSrc: string;
+  iconSrc?: string;
   text: string;
 };
 

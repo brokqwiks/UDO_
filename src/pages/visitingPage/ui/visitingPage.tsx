@@ -15,14 +15,9 @@ export const VisitingPage = () => {
       <div className={styles.visitingPageWhiteContainer}>
         <Header />
         <MainStart />
-      </div>
 
-      <div className={styles.visitingPageWhiteContainer}>
         <About />
-      </div>
 
-
-      <div className={styles.visitingPageWhiteContainer}>
         <Community />
       </div>
 
@@ -42,8 +37,6 @@ export const VisitingPage = () => {
 
         <div className={styles.visitingPageBlack}>
           <Partners />
-        </div>
-        <div className={styles.visitingPageBlack}>
           <Footer />
         </div>
       </div>

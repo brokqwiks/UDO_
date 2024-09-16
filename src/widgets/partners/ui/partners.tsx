@@ -5,7 +5,7 @@ export const Partners = () => {
     <section className={styles.partnersContainer}>
       <div className={styles.partnersHeading}>
         <h2>Our Partners</h2>
-        <img src={partners_icon_users} alt="" />
+        <img loading="lazy" src={partners_icon_users} alt="" />
       </div>
       <img
         loading="lazy"

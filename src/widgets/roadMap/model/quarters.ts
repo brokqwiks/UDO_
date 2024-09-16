@@ -77,7 +77,7 @@ export const quarters: TQuarters[] = [
           "https://cdn.builder.io/api/v1/image/assets/TEMP/b02dd14b446831411bd23e298b76059b2d7c145cf45eca8c343fd1dfce0b790f?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
         text: "NOThing X3",
       },
-      { text: "Soon...", iconSrc: "" },
+      { text: "Soon..."},
     ],
   },
 ];

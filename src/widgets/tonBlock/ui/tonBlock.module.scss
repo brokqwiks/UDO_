@@ -51,6 +51,9 @@
 
 .cardsBlock {
     margin-bottom: 42px;
+    // animation-name: cards-block;
+    // animation-duration: 1.5s;
+    // animation-timing-function: ease;
     img {
         width: 431px;
         height: 598px;
@@ -60,7 +63,14 @@
             margin-right: 0;
         }
     }
-
+    // @keyframes cards-block {
+    //     from{
+    //         transform: translateX(1600px);
+    //     }
+    //     to{
+    //         transform: translateX(0);
+    //     }
+    // }
 }
 
 

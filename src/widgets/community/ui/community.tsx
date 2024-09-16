@@ -42,6 +42,6 @@ export const Community = () => {
           </a>
           <img loading="lazy" src={question_icon} alt="" />
         </div>
-      </section>
+      </section>  
     );
 }
