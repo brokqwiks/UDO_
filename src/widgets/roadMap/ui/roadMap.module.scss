@@ -1,29 +1,29 @@
 .roadMapSection {
-    margin-bottom: 226px;
+    padding-top: 156px;
+    margin-bottom: 204px;
 }
 
 .titleContainer {
-    gap: 20px;
     display: flex;
+    margin-bottom: 134px;
 
     h1 {
         color: #fff;
-        font-size: 90px;
+        font-size: 80px;
+        margin-right: 30px;
     }
 
     img {
-        margin-left: 20px;
         aspect-ratio: 1;
         object-fit: contain;
         object-position: center;
-        width: 112px;
+        width: 96px;
         max-width: 100%;
     }
 }
 
 .timelineContainer {
     display: flex;
-    margin-top: 184px;
     gap: 28px;
     font-family: Inter, sans-serif;
     color: #fff;
@@ -34,7 +34,7 @@
         aspect-ratio: 0.03;
         object-fit: contain;
         object-position: center;
-        width: 20px;
+        width: 23px;
     }
 }
 

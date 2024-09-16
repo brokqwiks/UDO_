@@ -8,6 +8,7 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContant}>
         <h2>UDO Team</h2>
+        <div>
         <a href="#" target="_blank">
           <img loading="lazy" src={telegram_footer} alt="" />
         </a>
@@ -17,6 +18,8 @@ export const Footer = () => {
         <a href="#" target="_blank">
           <img loading="lazy" src={twitter_footer} alt="" />
         </a>
+        </div>
+        
         <p>Powered by TON Blockchain</p>
       </div>
     </footer>

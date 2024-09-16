@@ -1,7 +1,8 @@
 .about {
     width: 100%;
     height: 100%;
-    margin-bottom: 220px;
+    margin-bottom: 204px;
+    padding-top: 156px;
     display: flex;
 }
 
@@ -22,10 +23,10 @@
     }
 
     p {
-        width: 620px;
-        font-size: 40px;
+        width: 720px;
+        font-size: 30px;
         margin-bottom: 40px;
-        font-weight: bold;
+        font-weight: 600;
         color: #333;
 
     }
@@ -36,7 +37,7 @@
 }
 
 .aboutHeader .aboutText {
-    background-image: linear-gradient(90deg, #0066FF, #00FFFF);
+    background-image: linear-gradient(90deg, #0066FF, #01D1FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -48,14 +49,15 @@
     gap: 0;
 
     button {
-        width: 182px;
-        height: 65px;
+        width: 200px;
+        height: 84px;
         display: flex;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
         border-radius: 15px;
         border: 4px solid #00A3FF;
+        background: white;
         color: black;
         font-size: 30px;
         font-weight: 700;
@@ -92,7 +94,7 @@
 
 .gifBlock {
     position: relative;
-    margin-left: 270px;
+    margin-left: 189px;
 
     img {
         width: 400px;
