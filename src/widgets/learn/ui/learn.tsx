@@ -1,9 +1,10 @@
 import styles from "./learn.module.scss";
-import app from "../../../../public/app.svg";
+import app from "../../../../public/svg/app.svg";
+import block from "../../../../public/svg/block.svg";
+import contact from "../../../../public/svg/contract.svg";
+import toncoin2 from "../../../../public/svg/toncoin2.svg";
+import crypto_with_gradient from '../../../../public/icons/crypto_wIth_gradient.png'
 import { Button } from "../../../shared/ui/button";
-import block from "../../../../public/block.svg";
-import contact from "../../../../public/contract.svg";
-import toncoin2 from "../../../../public/toncoin2.svg";
 export const Learn = () => {
   return (
     <section className={styles.learnContainer}>
@@ -44,7 +45,7 @@ export const Learn = () => {
           </p>
         </div>
         <div className={styles.learnImg}>
-          <img loading="lazy" src="" alt="" />
+          <img loading="lazy" src={crypto_with_gradient} alt="" />
         </div>
       </div>
     </section>

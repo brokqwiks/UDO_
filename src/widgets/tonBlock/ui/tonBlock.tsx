@@ -1,9 +1,9 @@
 import styles from "./tonBlock.module.scss";
-import telegram_wallet_img from "../../../../public/telegram_wallet_block.png";
-import tonkeeper_wallet_img from "../../../../public/tonkeeper_wallet_block.png";
-import tonconnect_img from "../../../../public//tonconnect_block.png";
-import toncoin_icon3 from "../../../../public/toncoin3.svg";
-import toncoin from "../../../../public/toncoin.svg";
+import telegram_wallet_img from "../../../../public/icons/telegram_wallet_block.png";
+import tonkeeper_wallet_img from "../../../../public/icons/tonkeeper_wallet_block.png";
+import tonconnect_img from "../../../../public/icons/tonconnect_block.png";
+import toncoin_icon3 from "../../../../public/svg/toncoin3.svg";
+import toncoin from "../../../../public/svg/toncoin.svg";
 import { Button } from "../../../shared/ui/button/button";
 
 export const TonBlock = () => {

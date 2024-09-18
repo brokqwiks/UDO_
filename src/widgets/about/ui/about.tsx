@@ -1,10 +1,10 @@
 import styles from "./about.module.scss";
-import duck1 from "../../../../public/duck1.gif";
-import duck2 from "../../../../public/duck2.gif";
-import duck3 from "../../../../public/duck3.gif";
-import duck4 from "../../../../public/duck4.gif";
-import duck5 from "../../../../public/duck5.gif";
-import rocket from "../../../../public/rocket.svg";
+import duck1 from "../../../../public/gif/duck1.gif";
+import duck2 from "../../../../public/gif/duck2.gif";
+import duck3 from "../../../../public/gif/duck3.gif";
+import duck4 from "../../../../public/gif/duck4.gif";
+import duck5 from "../../../../public/gif/duck5.gif";
+import rocket from "../../../../public/svg/rocket.svg";
 import { Button } from "../../../shared/ui/button/button";
 export const About = () => {
   const gif_array = [duck1, duck2, duck3, duck4, duck5];
@@ -26,7 +26,7 @@ export const About = () => {
         <div className={styles.aboutButtons}>
           <Button>Fast <img loading="lazy" src={rocket} alt="" /></Button>
           <Button>Safe</Button>
-          <Button>Support</Button>
+          <Button onClick={() => open('https://t.me/brokqwiks')}>Support</Button>
         </div>
       </div>
       <div className={styles.gifBlock}>

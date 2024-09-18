@@ -1,10 +1,10 @@
 import styles from './community.module.scss'
 import { CommunityCard } from '../../communityCard'
-import user_icon from '../../../../public//users2.svg'
-import telegram_icon from '../../../../public//telegram.svg'
-import github_icon from '../../../../public//github.svg'
-import twitter_icon from '../../../../public//twitter.svg'
-import question_icon from '../../../../public//question.svg'
+import user_icon from '../../../../public/svg/users2.svg'
+import telegram_icon from '../../../../public/svg/telegram.svg'
+import github_icon from '../../../../public/svg/github.svg'
+import twitter_icon from '../../../../public/svg/twitter.svg'
+import question_icon from '../../../../public/svg/question.svg'
 
 export const Community = () => {
     return (

@@ -1,7 +1,7 @@
 import styles from "./footer.module.scss";
-import twitter_footer from "../../../../public/twitter_icon_bg.svg";
-import telegram_footer from "../../../../public/telegram_icon_bg.svg";
-import github_footer from "../../../../public/github_icon_bg.svg";
+import twitter_footer from "../../../../public/svg/twitter_icon_bg.svg";
+import telegram_footer from "../../../../public/svg/telegram_icon_bg.svg";
+import github_footer from "../../../../public/svg/github_icon_bg.svg";
 
 export const Footer = () => {
   return (

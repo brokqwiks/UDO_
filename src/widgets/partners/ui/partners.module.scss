@@ -14,11 +14,18 @@
     }
 
     .allPartners {
-        max-width: 100%;
+        width: 1428px;
         height: 507px;
         margin-top: 134px;
         aspect-ratio: 2.13;
         object-fit: contain;
         object-position: center;
+        img{
+            width: 200px;
+            height: 200px;
+            margin-right: 107px ;
+            margin-bottom: 107px;
+            border-radius: 20px;
+        }
     }
 }

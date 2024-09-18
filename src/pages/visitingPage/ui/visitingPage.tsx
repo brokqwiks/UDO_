@@ -25,14 +25,12 @@ export const VisitingPage = () => {
 
       <TonBlock />
       <div className={styles.visitingPageBlackContainer}>
+        <span className={styles.dottedWhite}></span>
         <div className={styles.visitingPageBlack}>
           <Learn />
-        </div>
-        <span className={styles.dottedWhite}></span>
-
-        <div className={styles.visitingPageBlack}>
           <RoadMap />
         </div>
+
         <span className={styles.dottedWhite}></span>
 
         <div className={styles.visitingPageBlack}>

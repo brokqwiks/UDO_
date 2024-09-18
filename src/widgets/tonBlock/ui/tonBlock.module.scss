@@ -8,7 +8,7 @@
         align-items: center;
         width: 329px;
         height: 84px;
-        padding-left: 50px;
+        padding-left: 44px;
         font-size: 36px;
         font-weight: 700;
         background: #018EFF;
@@ -22,7 +22,7 @@
             background: white;
             color: black;
             cursor: pointer;
-            padding-left: 80px;
+            padding-left: 79px;
         }
 
         img {
@@ -76,7 +76,7 @@
 
 .descriptionBlock {
     span {
-        font-weight: 900;
+        font-weight: 700;
         background-image: linear-gradient(90deg, #0066FF, #00FFFF);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -89,7 +89,6 @@
         line-height: 60px;
         font-weight: 700;
         margin-bottom: 40px;
-        font-weight: bold;
         color: #333;
 
         &:last-child {
