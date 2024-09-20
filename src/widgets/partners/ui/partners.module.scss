@@ -2,15 +2,16 @@
     padding-top: 156px;
     margin-bottom: 260px;
 
-    .partnersHeading{
+    .partnersHeading {
         display: flex;
+
         h2 {
             margin-right: 30px;
             font-size: 80px;
             font-weight: 800;
             color: #fff;
         }
-    
+
     }
 
     .allPartners {
@@ -20,12 +21,65 @@
         aspect-ratio: 2.13;
         object-fit: contain;
         object-position: center;
-        img{
+
+        button {
             width: 200px;
             height: 200px;
-            margin-right: 107px ;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            margin-right: 107px;
             margin-bottom: 107px;
             border-radius: 20px;
         }
+    }
+}
+
+.modalContentPartners {
+    width: 895px;
+    height: 529px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .gif7Dugs {
+        width: 245;
+        height: 245px;
+        margin-bottom: 40px;
+    }
+
+    button {
+        width: 214px;
+        height: 48px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 800;
+        font-size: 20px;
+
+        img {
+            width: 23px;
+            height: 23px;
+            margin-right: 13px;
+        }
+    }
+
+    p {
+        width: 700px;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
     }
 }
