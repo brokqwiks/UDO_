@@ -42,12 +42,20 @@
 .modalContentPartners {
     width: 895px;
     height: 529px;
-    background: white;
-    border-radius: 20px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: white;
+    border-radius: 20px;
+
+    span {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        cursor: pointer;
+    }
 
     .gif7Dugs {
         width: 245;

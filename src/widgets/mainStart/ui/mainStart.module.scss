@@ -71,6 +71,7 @@
 .modalContent {
     width: 645px;
     height: 554px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +79,12 @@
     background: white;
     border-radius: 20px;
     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
-
+    span{
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        cursor: pointer;
+    }
     .gif6Dugs {
         width: 228px;
         height: 228px;

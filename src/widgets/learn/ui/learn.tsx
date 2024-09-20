@@ -1,10 +1,10 @@
 import styles from "./learn.module.scss";
-import app from "../../../../public/svg/app.svg";
-import block from "../../../../public/svg/block.svg";
-import contact from "../../../../public/svg/contract.svg";
-import toncoin2 from "../../../../public/svg/toncoin2.svg";
-import crypto_with_gradient from '../../../../public/icons/crypto_wIth_gradient.png'
 import { Button } from "../../../shared/ui/button";
+import app from "/svg/app.svg";
+import block from "/svg/block.svg";
+import contact from "/svg/contract.svg";
+import toncoin2 from "/svg/toncoin2.svg";
+import crypto_with_gradient from '/icons/crypto_wIth_gradient.png'
 export const Learn = () => {
   return (
     <section className={styles.learnContainer}>

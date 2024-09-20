@@ -1,16 +1,17 @@
-import { useState } from "react";
 import styles from "./partners.module.scss";
+import { useModal } from "../../../shared/ui/modal/model/useModal";
 import { Modal } from "../../../shared/ui/modal/ui/modal";
 import { Button } from "../../../shared/ui/button";
 import { handleTG } from "../../../features/handleTG/handleTG";
-import gif_7 from "../../../../public/gif/duck7.gif";
-import partners_icon_users from "../../../../public/svg/partners_icon_users.svg";
-import telegram from "../../../../public/svg/telegram.svg";
-import ton_nest_lvl2 from "../../../../public/icons/ton_nest_lvl2.jpg";
-import add_new_partners from "../../../../public/icons/add_new_partners.png";
+import gif_7 from "/gif/duck7.gif";
+import partners_icon_users from "/svg/partners_icon_users.svg";
+import telegram from "/svg/telegram.svg";
+import ton_nest_lvl2 from "/icons/ton_nest_lvl2.jpg";
+import add_new_partners from "/icons/add_new_partners.png";
 
 export const Partners = () => {
-  const [modal, setModal] = useState(false);
+
+  const {modal, setModal} = useModal()
 
   return (
     <section className={styles.partnersContainer}>
@@ -29,8 +30,8 @@ export const Partners = () => {
         <img loading="lazy" src="" alt="" />
         <img loading="lazy" src="" alt="" />  */}
       </div>
-      <Modal isOpen={modal}>
-        <div className={styles.modalContentPartners}>
+      <Modal isOpen={modal} className={styles.modalContentPartners}>
+          <span onClick={() => setModal(false)}>x</span>
           <img loading="lazy" src={gif_7} alt="" className={styles.gif7Dugs} />
           <Button
             onClick={() => {
@@ -41,7 +42,6 @@ export const Partners = () => {
             <img loading="lazy" src={telegram} alt="" /> Telegram
           </Button>
           <p>Contact the founder, we will definitely find a common language.</p>
-        </div>
       </Modal>
     </section>
   );
