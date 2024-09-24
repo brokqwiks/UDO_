@@ -7,7 +7,7 @@ export const CommunityCard = ({ icon, name, descr, url, aboutBtn }: TTypeCard) =
     const [hover, setHover] = useState(false);
 
     return (
-        <div
+        <article
             className={styles.cardMain}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
@@ -27,6 +27,6 @@ export const CommunityCard = ({ icon, name, descr, url, aboutBtn }: TTypeCard) =
                     {" >"}
                 </span>
             </a>
-        </div>
+        </article>
     );
 }

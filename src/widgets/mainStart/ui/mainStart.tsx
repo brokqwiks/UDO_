@@ -6,11 +6,12 @@ import { Button } from "../../../shared/ui/button/button";
 import { handleTG } from "../../../features/handleTG/handleTG";
 import gif_6 from "/gif/duck6.gif";
 import telegram from "/svg/telegram.svg";
+import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 
 export const MainStart = () => {
   const { displayedText } = useMyStart();
   const { modal, setModal } = useModal();
-
+  const {t} = useMyTranslate()
   return (
     <main className={styles.mainSection}>
       <div className={styles.mainContent}>
@@ -19,22 +20,21 @@ export const MainStart = () => {
         </div>
         <span className={styles.highlight}>Market-Place</span>
         <p>
-          Decentralized platform for buying and selling digital goods using TON
-          blockchain smart contracts
+          {t("mainDescription")}
         </p>
         <Button
           onClick={() => {
             setModal(!modal);
           }}
         >
-          Open
+          {t("mainDescriptionButton")}
         </Button>
       </div>
 
       <Modal isOpen={modal} className={styles.modalContent}>
         <span onClick={() => setModal(false)}>x</span>
-        <img loading="lazy" src={gif_6} alt="" className={styles.gif6Dugs} />
-        <p>It's empty here so far, but we're working on it</p>
+        <img loading="lazy" src={gif_6} alt="gifDucks6" className={styles.gif6Dugs} />
+        <p>{t('mainModalDescription')}</p>
         <Button
           onClick={() => {
             handleTG();

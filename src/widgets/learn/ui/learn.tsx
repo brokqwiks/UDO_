@@ -6,43 +6,44 @@ import app from "/svg/app.svg";
 import block from "/svg/block.svg";
 import contact from "/svg/contract.svg";
 import toncoin2 from "/svg/toncoin2.svg";
+import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 
 export const Learn = () => {
-  const [selectedDescription, setSelectedDescription] = useState(
-    descriptionLearn[0]
-  );
-
-  const handleDescriptionClick = (id: number) => {
-    setSelectedDescription(descriptionLearn[id]);
-  };
+  const [selectedDescription, setSelectedDescription] = useState(descriptionLearn[0]);
+  const {t} = useMyTranslate()
+const handleDescriptionClick = (id: number) => {
+  setSelectedDescription(descriptionLearn[id]);
+};
   return (
     <section className={styles.learnContainer}>
       <div className={styles.learnHeading}>
-        <h2>Learn</h2>
+        <h2>{t('sectionLearnTitle')}</h2>
         <img loading="lazy" src={app} alt="" />
       </div>
       <p className={styles.learnProtectText}>
-        Protect your money with blockchain
+        {t('sectionLearnDescription')}
       </p>
-      <div className={styles.learnMainInfoAndImg}>
+      <aside className={styles.learnMainInfoAndImg}>
         <div className={styles.learnContent}>
           <div className={styles.learnBtnsAndFAQ}>
             <div className={styles.learnBtns}>
               <Button
-                autoFocus={true}
+                // autoFocus={true}
                 onClick={() => handleDescriptionClick(0)}
               >
-                <img loading="lazy" src={contact} alt="" /> Smart-Contracts
+                <img loading="lazy" src={contact} alt="smart-contract" />{" "}
+                {t('sectionLearnButtonSmartContract')}
               </Button>
               <Button onClick={() => handleDescriptionClick(1)}>
-                <img loading="lazy" src={toncoin2} alt="" /> Security Wallet
+                <img loading="lazy" src={toncoin2} alt="security-wallet" />{" "}
+                {t('sectionLearnButtonSecurityWallet')}
               </Button>
               <Button onClick={() => handleDescriptionClick(2)}>
-                <img loading="lazy" src={block} alt="" /> DeFi
+                <img loading="lazy" src={block} alt="defi" /> {t('sectionLearnButtonDefi')}
               </Button>
             </div>
             <p>
-              More detailed information can be found on <a href="#">FAQ</a>
+              {t('sectionLearnFAQ')} <a href="#">FAQ</a>
             </p>
           </div>
           <div className={styles.learnInfo}>
@@ -54,7 +55,7 @@ export const Learn = () => {
         <div className={styles.learnImg}>
           <img loading="lazy" src={selectedDescription.imgDescription} alt="" />
         </div>
-      </div>
+      </aside>
     </section>
   );
 };
