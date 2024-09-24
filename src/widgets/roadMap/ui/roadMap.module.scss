@@ -53,20 +53,18 @@
 .quarterSection {
     display: flex;
     align-self: stretch;
-    width: 100%;
     margin-bottom: 51px;
     h1{
-        width: 236px;
+        width: 284px;
         font-size: 46px;
     }
 }
 
 .milestoneContainer {
-    width: 1094px;
     display: flex;
+    width: 1092px;
     gap: 17px;
     flex-wrap: wrap;
-    flex-grow: 1;
     flex-basis: auto;
 }
 

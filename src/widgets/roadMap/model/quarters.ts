@@ -7,23 +7,28 @@ export const quarters: TQuarters[] = [
     milestones: [
       {
         iconSrc:
-          "https://cdn.builder.io/api/v1/image/assets/TEMP/e8634bafe4f024591b5df104d21ebb58dc8ea53dc08060b506caaf93b7a910c7?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
-        text: "Will be on release",
+          "https://cdn.builder.io/api/v1/image/assets/TEMP/e8f13cf4451daff206a6b00dd40417de3502f40e29d6dbbbd09bf593b1fcb61b?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
+        text: "Landing",
       },
       {
         iconSrc:
-          "https://cdn.builder.io/api/v1/image/assets/TEMP/9b6b1e0bd2d716ba909265f193aec18e2c49a46283254eaa9e47ede61bc47d02?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
-        text: "Nothing",
+          "https://cdn.builder.io/api/v1/image/assets/TEMP/eafd0cb0ca13aed36c6a2e737f9122d467c7b62b4427683c1b3235742004ecf1?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
+        text: "MVP",
       },
       {
         iconSrc:
-          "https://cdn.builder.io/api/v1/image/assets/TEMP/c531561d8373973fd8d44c98b4f66406abb0f3de762efe7037aa3a3ced479512?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
-        text: "Build Great Community",
+          "https://cdn.builder.io/api/v1/image/assets/TEMP/72f4543190585e0ddf3063e97f87e78481ff232ccb42ddbf65b6653f33f9a6a9?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
+        text: "Ton Nest",
       },
       {
         iconSrc:
-          "https://cdn.builder.io/api/v1/image/assets/TEMP/23ad49b9fe666670faca6ce722d506df628660f75d0e8b46c6dd6055aecf9eb2?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
-        text: "Hard work",
+          "https://cdn.builder.io/api/v1/image/assets/TEMP/fa05d40668d0d304ca8cb3b34e053e55ee89ac64fc763ab898bfb8c163116d53?placeholderIfAbsent=true&apiKey=a430abf75eba4f8a907b91b20a820667",
+        text: "Comminity",
+      },
+      {
+        iconSrc:
+          "https://cdn.builder.io/api/v1/image/assets/TEMP/72f4543190585e0ddf3063e97f87e78481ff232ccb42ddbf65b6653f33f9a6a9?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
+        text: "Investors",
       },
       {
         iconSrc:
@@ -38,28 +43,23 @@ export const quarters: TQuarters[] = [
     milestones: [
       {
         iconSrc:
-          "https://cdn.builder.io/api/v1/image/assets/TEMP/e8f13cf4451daff206a6b00dd40417de3502f40e29d6dbbbd09bf593b1fcb61b?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
-        text: "More Partners",
+          "https://cdn.builder.io/api/v1/image/assets/TEMP/d0335f907cd5cf13dffe0f0e885496b45c6b87ef1d37a8dc7b3c1d873c0a4120?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
+        text: "Alpha-Test",
       },
       {
         iconSrc:
           "https://cdn.builder.io/api/v1/image/assets/TEMP/7f229c343dd7dbe3c9efc07b719ddd8649c315bdb86e6dea82c7882a87cb451b?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
-        text: "Nothing)",
+        text: "Ton Apps",
       },
       {
         iconSrc:
-          "https://cdn.builder.io/api/v1/image/assets/TEMP/72f4543190585e0ddf3063e97f87e78481ff232ccb42ddbf65b6653f33f9a6a9?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
-        text: "Buy TON",
+          "https://cdn.builder.io/api/v1/image/assets/TEMP/fa05d40668d0d304ca8cb3b34e053e55ee89ac64fc763ab898bfb8c163116d53?placeholderIfAbsent=true&apiKey=a430abf75eba4f8a907b91b20a820667",
+        text: "Closed Beta-Test",
       },
       {
         iconSrc:
-          "https://cdn.builder.io/api/v1/image/assets/TEMP/576c2d28b687823f195d207a702a8190c66d996fd0a94c1af5caeb01059c68f2?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
-        text: "Premium",
-      },
-      {
-        iconSrc:
-          "https://cdn.builder.io/api/v1/image/assets/TEMP/d0335f907cd5cf13dffe0f0e885496b45c6b87ef1d37a8dc7b3c1d873c0a4120?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
-        text: "Do the impossible",
+          "https://cdn.builder.io/api/v1/image/assets/TEMP/fa05d40668d0d304ca8cb3b34e053e55ee89ac64fc763ab898bfb8c163116d53?placeholderIfAbsent=true&apiKey=a430abf75eba4f8a907b91b20a820667",
+        text: "Opened Beta-Test",
       },
     ],
   },
@@ -69,15 +69,20 @@ export const quarters: TQuarters[] = [
     milestones: [
       {
         iconSrc:
-          "https://cdn.builder.io/api/v1/image/assets/TEMP/eafd0cb0ca13aed36c6a2e737f9122d467c7b62b4427683c1b3235742004ecf1?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
-        text: "Developers",
+          "https://cdn.builder.io/api/v1/image/assets/TEMP/c33c68f0113c1f205538640290078a7ec92b309d2e751f1b684976c8e962e0c4?placeholderIfAbsent=true&apiKey=a430abf75eba4f8a907b91b20a820667",
+        text: "Release",
       },
       {
         iconSrc:
-          "https://cdn.builder.io/api/v1/image/assets/TEMP/b02dd14b446831411bd23e298b76059b2d7c145cf45eca8c343fd1dfce0b790f?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
-        text: "NOThing X3",
+          "https://cdn.builder.io/api/v1/image/assets/TEMP/8ca52431bc8efca30a15c204a3dd6ec443a30f968a98f4adc88624380b083f65?placeholderIfAbsent=true&apiKey=a430abf75eba4f8a907b91b20a820667",
+        text: "TON Jettons",
       },
-      { text: "Soon..."},
+      {
+        iconSrc:
+          "https://cdn.builder.io/api/v1/image/assets/TEMP/7f229c343dd7dbe3c9efc07b719ddd8649c315bdb86e6dea82c7882a87cb451b?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223",
+        text: "More Categories",
+      },
+      { text: "Soon..." },
     ],
   },
 ];

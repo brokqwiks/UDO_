@@ -1,12 +1,12 @@
 .learnContainer {
-    padding-top: 156px;
     margin-bottom: 204px;
     color: white;
+    padding-top: 156px;
 }
 
 .learnHeading {
-    display: flex;
     margin-bottom: 24px;
+    display: flex;
 
     h2 {
         font-size: 90px;
@@ -25,12 +25,15 @@
     margin-bottom: 71px;
 }
 
-.learnContent {
+.learnMainInfoAndImg {
     display: flex;
-    padding-top: 70px;
     background: #262732;
     border-radius: 20px;
+}
 
+.learnContent {
+    display: flex;
+    padding-top: 80px;
 
     .learnBtnsAndFAQ {
         padding-bottom: 10px;
@@ -63,10 +66,11 @@
                 border-right: 6px solid #3C4173;
                 background: transparent;
                 cursor: pointer;
-                transition: .2s ease-in-out;
+                transition: .4s ease-in-out;
 
                 &:focus {
                     background: #2E2F3E;
+                    outline-style: none;
                     border: none;
                     border-right: 6px solid #2562FF;
                 }
@@ -84,8 +88,6 @@
 }
 
 .learnInfo {
-    margin-right: 168px;
-
     h3 {
         font-size: 30px;
         font-weight: 700;
@@ -103,9 +105,7 @@
 
 .learnImg {
     img {
-        width: 298px;
-        height: 400px;
-        border-radius: 20px;
-        background: white;
+        width: 509px;
+        height: 613px;
     }
 }
