@@ -35,9 +35,25 @@ export const resources = {
         "sectionLearnButtonSecurityWallet": 'Security Wallet',
         "sectionLearnButtonDefi": 'DeFi',
         "sectionLearnFAQ": 'More detailed information can be found on',
-        "sectionLearnInfoTitle": 'Data storage',
-        "sectionLearnInfoParagraf1": 'We use smart contract technology to store product data in encryptedform and autonomously transmit it in decrypted form.',
-        "sectionLearnInfoParagraf2": 'This approach gives us access to update encryption methods, and you users do not have to worry about your data, since it is available only to you.' 
+        
+        "sectionLearnInfoTitleSmartContract": 'Data storage',
+        "sectionLearnInfoParagraf1SmartContract": 'We use smart contract technology to store product data in encryptedform and autonomously transmit it in decrypted form.',
+        "sectionLearnInfoParagraf2SmartContract": 'This approach gives us access to update encryption methods, and you users do not have to worry about your data, since it is available only to you.',
+
+        "sectionLearnInfoTitleSecurityWallet": 'Safely Wallet',
+        "sectionLearnInfoParagraf1SecurityWallet": 'Your funds are not in some database, but in a separate wallet, a smart contract in the blockchain.',
+        "sectionLearnInfoParagraf2SecurityWallet": 'This allows us to resolve disputes in transactions between buyers and sellers. The money is sent to the same wallets and freezes for a couple of days until the transaction is confirmed.',
+
+        "sectionLearnInfoTitleDeFi": 'Full Decentralization',
+        "sectionLearnInfoParagraf1DeFi": 'All goods, transaction data, and user data are located inside the blockchain, not on a centralized server, a host.',
+        "sectionLearnInfoParagraf2DeFi": 'Decentralization of this level protects us from unauthorized hacking by fraudsters, and also allows us to quickly analyze open data.',
+
+        "sectionRoadMap": 'Road Map',
+
+        "sectionOurPartners": 'Our Partners',
+
+        "sectionModalOurPartners": 'Contact the founder, we will definitely find a common language.'
+
     },
     },
     ru: {
@@ -76,9 +92,25 @@ export const resources = {
         "sectionLearnButtonSecurityWallet": 'Секретный кошелёк',
         "sectionLearnButtonDefi": 'Децентрилизация',
         "sectionLearnFAQ": 'Больше информации в нашем',
-        "sectionLearnInfoTitle": 'Хранилище данных',
-        "sectionLearnInfoParagraf1": 'Мы используем технологию смарт-контрактов для хранения данных о товарах в зашифрованном виде и автономной передачи их в расшифрованном виде.',
-        "sectionLearnInfoParagraf2": 'Такой подход дает нам доступ к обновлению методов шифрования, и вам, пользователям, не нужно беспокоиться о своих данных, так как они доступны только вам.' 
+
+        "sectionLearnInfoTitleSmartContract": 'Хранилище данных',
+        "sectionLearnInfoParagraf1SmartContract": 'Мы используем технологию смарт-контрактов для хранения данных о товарах в зашифрованном виде и автономной передачи их в расшифрованном виде.',
+        "sectionLearnInfoParagraf2SmartContract": 'Такой подход дает нам доступ к обновлению методов шифрования, и вам, пользователям, не нужно беспокоиться о своих данных, так как они доступны только вам.',
+        
+        "sectionLearnInfoTitleSecurityWallet": 'Безопасный кошелек',
+        "sectionLearnInfoParagraf1SecurityWallet": 'Ваши средства находятся не в какой-то базе данных, а в отдельном кошельке, смарт-контракте в блокчейне.',
+        "sectionLearnInfoParagraf2SecurityWallet": 'Это позволяет нам разрешать споры в транзакциях между покупателями и продавцами. Деньги отправляются на те же кошельки и замораживаются на пару дней, пока транзакция не будет подтверждена.',
+
+        "sectionLearnInfoTitleDeFi": 'Полная децентрализация',
+        "sectionLearnInfoParagraf1DeFi": 'Все товары, данные о транзакциях и данные пользователей находятся внутри блокчейна, а не на централизованном сервере, хосте.',
+        "sectionLearnInfoParagraf2DeFi": 'Децентрализация такого уровня защищает нас от несанкционированного взлома мошенниками, а также позволяет быстро анализировать открытые данные.',
+
+        "sectionRoadMap": 'Карта проекта',
+
+        "sectionOurPartners": 'Наши партнёры',
+        
+        "sectionModalOurPartners": 'Свяжитесь с основателем, мы обязательно найдем общий язык.'
+
       },
     },
   };

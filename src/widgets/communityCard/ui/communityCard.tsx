@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import styles from './communityCard.module.scss';
 import { TTypeCard } from '../model/types';
+import { useMyTranslate } from '../../../app/translationText/useMyTranslate';
 
 export const CommunityCard = ({ icon, name, descr, url, aboutBtn }: TTypeCard) => {
 
     const [hover, setHover] = useState(false);
-
+    const {i18n} = useMyTranslate()
     return (
         <article
             className={styles.cardMain}
@@ -14,7 +15,7 @@ export const CommunityCard = ({ icon, name, descr, url, aboutBtn }: TTypeCard) =
         >
             <img loading="lazy" src={icon} alt="" />
             <h1>{name}</h1>
-            <p>{descr}</p>
+            <p style={{width: i18n.language == 'en' ? '255px' : '336px' }}>{descr}</p>
             <a href={url} target='_blank' id='123'>
                 {aboutBtn}
                 <span

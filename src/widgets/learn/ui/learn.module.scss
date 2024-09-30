@@ -27,6 +27,7 @@
 
 .learnMainInfoAndImg {
     display: flex;
+    position: relative;
     background: #262732;
     border-radius: 20px;
 }
@@ -50,11 +51,11 @@
             }
         }
 
-        .learnBtns {
+        .learnBtnsContainer {
             margin-bottom: 200px;
             margin-right: 110px;
 
-            button {
+            .learnButton {
                 display: flex;
                 align-items: center;
                 padding-left: 46px;
@@ -95,7 +96,7 @@
     }
 
     p {
-        width: 310px;
+        width: 333px;
         margin-bottom: 36px;
         font-size: 20px;
         font-weight: 600;
@@ -104,8 +105,10 @@
 }
 
 .learnImg {
+    height: 0;
     img {
-        width: 509px;
-        height: 613px;
+        position: absolute;
+        right: 0;
+        height: 615px;
     }
 }

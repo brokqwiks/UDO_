@@ -1,12 +1,12 @@
 import styles from "./mainStart.module.scss";
 import { useMyStart } from "../model/useMyStart";
 import { useModal } from "../../../shared/ui/modal/model/useModal";
+import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 import { Modal } from "../../../shared/ui/modal/ui/modal";
 import { Button } from "../../../shared/ui/button/button";
 import { handleTG } from "../../../features/handleTG/handleTG";
 import gif_6 from "/gif/duck6.gif";
 import telegram from "/svg/telegram.svg";
-import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 
 export const MainStart = () => {
   const { displayedText } = useMyStart();

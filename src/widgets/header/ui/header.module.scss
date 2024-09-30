@@ -51,6 +51,16 @@
                 position: absolute;
                 right: 0;
             }
+            button{
+                background: transparent;
+                color: #000;
+                font-weight: 800;
+                cursor: pointer;
+                transition: .5s;
+                &:hover {
+                    color: rgba(0, 0, 0, 0.6)
+                }
+            }
         }
     }
 }

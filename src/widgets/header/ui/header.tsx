@@ -3,8 +3,7 @@ import { Button } from "../../../shared/ui/button";
 import styles from "./header.module.scss";
 
 export const Header = () => {
-
-  const { t, changeLanguages } = useMyTranslate();
+  const { t, changeLanguages, i18n } = useMyTranslate();
 
   return (
     <header className={styles.header}>
@@ -26,10 +25,12 @@ export const Header = () => {
             <li>
               <a href="#">{t("headerSupport")}</a>
             </li>
-            <li>    
+            <li>
+              {i18n.language == "ru" ? (
                 <Button onClick={() => changeLanguages("en")}>Eng</Button>
-                <br />
-                <Button onClick={() => changeLanguages("ru")}>RU</Button>
+              ) : (
+                <Button onClick={() => changeLanguages("ru")}>Ru</Button>
+              )}
             </li>
           </ul>
         </nav>
