@@ -9,9 +9,11 @@ import gif_6 from "/gif/duck6.gif";
 import telegram from "/svg/telegram.svg";
 
 export const MainStart = () => {
+  
   const { displayedText } = useMyStart();
   const { modal, setModal } = useModal();
   const {t} = useMyTranslate()
+
   return (
     <main className={styles.mainSection}>
       <div className={styles.mainContent}>

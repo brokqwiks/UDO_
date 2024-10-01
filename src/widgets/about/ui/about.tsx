@@ -20,7 +20,6 @@ export const About = () => {
             <h1 className={styles.aboutText}>{t('sectionAboutTitle')}</h1>
             <h1>UDO</h1>
           </div>
-          <br />
           <p>
            {t('sectionAboutDescription')}
           </p>

@@ -16,17 +16,14 @@
         font-weight: 800;
         font-size: 80px;
         word-spacing: 15px;
-
-        span {
-            font-weight: 900;
-        }
+        margin-bottom: 21px;
     }
 
     p {
         width: 720px;
         font-size: 30px;
         margin-bottom: 40px;
-        font-weight: 600;
+        font-weight: 700;
         color: #333;
 
     }
@@ -43,10 +40,8 @@
 }
 
 .aboutButtons {
-    max-width: 700px;
     display: flex;
     justify-content: space-between;
-    gap: 0;
 
     button {
         width: 200px;
@@ -101,5 +96,76 @@
         height: 400px;
         justify-self: center;
         align-self: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        width: 0%;
+        margin-left: 25px;
+        margin-bottom: 105px;
+        padding-top: 0px;
+    }
+
+    .aboutHeader {
+        width: 221px;
+
+        h1 {
+            font-size: 40px;
+            word-spacing: 15px;
+            margin-bottom: 14px;
+        }
+
+        p {
+            width: 217px;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 46px;
+        }
+    }
+
+    .aboutText {
+        margin-right: 10px;
+    }
+
+    .aboutButtons {
+        button {
+            width: 92px;
+            height: 35px;
+            font-size: 15px;
+            border-radius: 10px;
+            border: 2px solid #00A3FF;
+
+            &:first-child {
+                margin-right: 10px;
+
+                &:hover {
+                    padding-left: 15px;
+                }
+            }
+
+            &:last-child {
+                margin-left: 10px;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-left: 2px;
+            }
+        }
+    }
+
+    .gifBlock {
+        position: absolute;
+        left: 282px;
+        margin-left: 0px;
+
+        img {
+            width: 136px;
+            height: 136px;
+            justify-self: center;
+            align-self: center;
+        }
     }
 }

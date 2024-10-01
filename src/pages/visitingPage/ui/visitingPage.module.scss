@@ -2,7 +2,15 @@
     display: block;
     width: 1428px;
     margin: 0 auto;
+    
 }
+
+@media screen and (max-width: 480px) {
+    .visitingPageWhiteContainer{
+        width: 480px;
+    }
+}
+
 .visitingPageBlackContainer{
     display: block;
     padding-top: 24px;
@@ -12,6 +20,15 @@
         margin: 0 auto;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .visitingPageBlackContainer{
+        display: block;
+        width: 480px;
+        margin: 0 auto;  
+    }
+}
+
 .dottedBlue{
     display: block;
     width: 100%;
@@ -20,6 +37,7 @@
     background: linear-gradient(to right, #0170FF 30px, transparent 30px, transparent 60px, #00FFFF 60px);
     background-size: 60px 4px; 
 }
+
 .dottedWhite{
     display: block;
     width: 100%;

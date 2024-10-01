@@ -7,6 +7,7 @@
 
 .mainContent {
     text-align: center;
+
     p {
         width: 600px;
         margin: 0 auto;
@@ -38,11 +39,12 @@
     }
 }
 
+
 .logoUdoContainer {
     display: inline-block;
-    height: 170px;
 
     h1 {
+        height: 170px;
         font-size: 90px;
         font-weight: bold;
         margin-bottom: 34px;
@@ -79,12 +81,14 @@
     background: white;
     border-radius: 20px;
     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
-    span{
+
+    span {
         position: absolute;
         top: 10px;
         right: 30px;
         cursor: pointer;
     }
+
     .gif6Dugs {
         width: 228px;
         height: 228px;
@@ -117,5 +121,41 @@
             height: 23px;
             margin-right: 13px;
         }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainSection {
+        margin-bottom: 79px;
+    }
+
+    .mainContent {
+        text-align: center;
+
+        p {
+            width: 296px;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        button {
+            width: 134px;
+            height: 36px;
+            font-size: 16px;
+        }
+    }
+
+    .logoUdoContainer {
+        h1 {
+            height: 79px;
+            font-size: 60px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .highlight {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 50px;
     }
 }
