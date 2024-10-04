@@ -9,7 +9,6 @@
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     width: 100%;
-    padding: 0 20px;
 }
 
 .logo {
@@ -60,6 +59,50 @@
                 &:hover {
                     color: rgba(0, 0, 0, 0.6)
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        margin-bottom: 80px;
+    }
+    .logo {
+        h1 {
+            font-size: 28px;
+        }
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigationAdaptiv {
+        ul {
+            display: flex;
+            // margin-left: 230px;
+            list-style: none;
+            li {
+                font-size: 20px;
+                padding: 0;
+                button{
+                    background: transparent;
+                    cursor: pointer;
+                }
+                .buttonAdaptiveLang{
+                    display: flex;
+                    margin-right: 14px;
+                    button{
+                        margin-right: 9px;
+                    }
+                    h4{
+                        width: 31px;
+                        text-align: center;
+                    }
+                }
+                
+                
             }
         }
     }

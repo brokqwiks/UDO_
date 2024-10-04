@@ -31,10 +31,8 @@
     flex-wrap: wrap;
 
     .timelineIcon {
-        aspect-ratio: 0.03;
-        object-fit: contain;
-        object-position: center;
-        width: 23px;
+        object-fit: cover;
+        width: 24px;
     }
 }
 
@@ -94,4 +92,61 @@
     &:hover{
         transform: scale(1.03);   
     }
+}
+
+
+@media screen and (max-width: 480px) {
+    .roadMapSection {
+        padding-top: 80px;
+        margin-bottom: 80px;
+    }
+    .titleContainer {
+        margin-bottom: 59px;
+    
+        h1 {
+            font-size: 34px;
+            margin-right: 10px;
+        }
+    
+        img {
+            object-fit: contain;
+            object-position: center;
+            width: 50px;
+        }
+    }
+    .timelineContainer {
+    
+        .timelineIcon {
+            width: 27px;
+            height: 1050px;
+        }
+    }
+    .quarterSection {
+        display: block;
+        margin-bottom: 42px;
+        h1{
+            font-size: 26px;
+            margin-bottom: 18px;
+        }
+    }
+    .milestoneContainer {
+        display: flex;
+        width: 190px;
+        margin-bottom: 42px;
+    }
+    .milestone {
+        padding: 8px 12px;
+        align-items: center;
+        border-radius: 10px;
+        border: 2px solid #018eff;
+        img {
+            width: 18px;
+            margin-right: 6px;
+        }
+    
+        h2 {
+            font-size: 16px;
+        }
+    }
+    
 }
