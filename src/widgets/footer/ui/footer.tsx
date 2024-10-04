@@ -13,7 +13,7 @@ export const Footer = () => {
           <img loading="lazy" src={telegram_footer} alt="" />
         </a>
         <a href="#" target="_blank">
-          <img loading="lazy" src={github_footer} alt="" />{" "}
+          <img loading="lazy" src={github_footer} alt="" />
         </a>
         <a href="#" target="_blank">
           <img loading="lazy" src={twitter_footer} alt="" />

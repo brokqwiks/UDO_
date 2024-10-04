@@ -7,6 +7,7 @@ export const CommunityCard = ({ icon, name, descr, url, aboutBtn }: TTypeCard) =
 
     const [hover, setHover] = useState(false);
     const {i18n} = useMyTranslate()
+    
     return (
         <article
             className={styles.cardMain}

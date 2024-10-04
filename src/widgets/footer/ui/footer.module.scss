@@ -24,3 +24,25 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding-bottom: 24px;
+        .footerContant {
+            margin-top: 12px;
+    
+            h2 {
+                font-size: 13px;
+            }
+            img {
+                margin-right: 6px;
+                width: 20px;
+                height: 20px;
+            }
+    
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}

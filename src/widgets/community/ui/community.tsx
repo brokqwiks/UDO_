@@ -1,12 +1,12 @@
 import styles from "./community.module.scss";
+import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
+import { Button } from "../../../shared/ui/button";
 import { CommunityCard } from "../../communityCard";
 import user_icon from "/svg/users2.svg";
 import telegram_icon from "/svg/telegram.svg";
 import github_icon from "/svg/github.svg";
 import twitter_icon from "/svg/twitter.svg";
 import question_icon from "/svg/question.svg";
-import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
-import { Button } from "../../../shared/ui/button";
 
 export const Community = () => {
   const { t } = useMyTranslate();
@@ -44,10 +44,12 @@ export const Community = () => {
           url="https://t.me/udo_ton"
         />
       </div>
-      <Button className={styles.contactButton}>
-        {t("sectionButtonContact")}
-        <img loading="lazy" src={question_icon} alt="" />
-      </Button>
+      {window.screen.width > 480 && (
+        <Button className={styles.contactButton}>
+          {t("sectionButtonContact")}
+          <img loading="lazy" src={question_icon} alt="" />
+        </Button>
+      )}
     </section>
   );
 };

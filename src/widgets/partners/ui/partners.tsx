@@ -25,8 +25,8 @@ export const Partners = () => {
       <div className={styles.allPartners}>
         <img loading="lazy" src={ton_nest_lvl2} alt="ton_nest" />
         <img loading="lazy" src={move_partner} alt="move_partner" />
-        {/* <img loading="lazy" src="" alt="" />
-        <img loading="lazy" src="" alt="" />
+        <img loading="lazy" src={move_partner} alt="" />
+        {/*<img loading="lazy" src="" alt="" />
         <img loading="lazy" src="" alt="" />
         <img loading="lazy" src="" alt="" />  */}
         <Button onClick={() => setModal(!modal)}>
