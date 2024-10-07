@@ -1,8 +1,8 @@
 import styles from "./mainStart.module.scss";
 import { useMyStart } from "../model/useMyStart";
-import { useModal } from "../../../shared/ui/modal/model/useModal";
+import { useModal } from "../../../shared/ui/modal/useModal";
 import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
-import { Modal } from "../../../shared/ui/modal/ui/modal";
+import { Modal } from "../../../shared/ui/modal/modal";
 import { Button } from "../../../shared/ui/button/button";
 import { handleTG } from "../../../features/handleTG/handleTG";
 import gif_6 from "/gif/duck6.gif";

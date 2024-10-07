@@ -1,11 +1,15 @@
-import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 import styles from "./header.module.scss";
+import { useState } from "react";
+import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 import { Button } from "../../../shared/ui/button";
+import { NavigationBar } from "../../../shared/ui/navigationBar";
 import icons_language from "/svg/icon_language.svg";
 import icons_bar from "/svg/icon_bars.svg";
 
 export const Header = () => {
+
   const { t, changeLanguages, i18n } = useMyTranslate();
+  const [navBar, setNavBar] = useState(false);
 
   return (
     <header className={styles.header}>
@@ -58,7 +62,7 @@ export const Header = () => {
                 )}
               </li>
               <li>
-                <Button>
+                <Button onClick={() => setNavBar(!navBar)}>
                   <img src={icons_bar} alt="" />
                 </Button>
               </li>
@@ -66,6 +70,21 @@ export const Header = () => {
           </nav>
         )}
       </div>
+
+      <NavigationBar isOpen={navBar} className={styles.navigationBar}>
+        <li>
+          <a href="#">{t("headerCommunity")} ˃</a>
+        </li>
+        <li>
+          <a href="#">{t("headerLern")} ˃</a>
+        </li>
+        <li>
+          <a href="#">{t("headerRoadMap")} ˃</a>
+        </li>
+        <li>
+          <a href="#">{t("headerSupport")} ˃</a>
+        </li>
+      </NavigationBar>
     </header>
   );
 };

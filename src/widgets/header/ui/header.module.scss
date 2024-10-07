@@ -66,7 +66,12 @@
 
 @media screen and (max-width: 480px) {
     .header {
-        margin-bottom: 80px;
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        padding: 17px 24px;
+        background: white;
     }
     .logo {
         h1 {
@@ -75,13 +80,13 @@
     }
     .container{
         display: flex;
+        position: relative;
         justify-content: space-between;
     }
 
     .navigationAdaptiv {
         ul {
             display: flex;
-            // margin-left: 230px;
             list-style: none;
             li {
                 font-size: 20px;
@@ -103,6 +108,27 @@
                 }
                 
                 
+            }
+        }
+    }
+    .navigationBar{
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        margin-top: 15px;
+        padding-top: 28px;
+        background-color: rgba(33, 33, 33, 0.99);
+        backdrop-filter: blur(8px);
+        li{
+            width: 390px;
+            margin: 0 auto;
+            list-style: none;
+            margin-bottom: 30px;
+            a{
+                color: white;
+                font-size: 18px;
+                font-weight: 500;
             }
         }
     }

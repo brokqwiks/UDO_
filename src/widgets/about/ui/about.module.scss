@@ -41,7 +41,6 @@
 
 .aboutButtons {
     display: flex;
-    justify-content: space-between;
 
     button {
         width: 200px;
@@ -87,6 +86,7 @@
     }
 }
 
+
 .gifBlock {
     position: relative;
     margin-left: 189px;
@@ -101,25 +101,24 @@
 
 @media screen and (max-width: 480px) {
     .about {
-        width: 0%;
         margin-bottom: 105px;
         padding-top: 80px;
     }
 
     .aboutHeader {
-        width: 221px;
+        width: 100%;
 
         h1 {
-            font-size: 40px;
-            word-spacing: 15px;
-            margin-bottom: 14px;
+            font-size: 33px;
+            word-spacing: 2px;
+            margin-bottom: 12px;
         }
 
         p {
-            width: 217px;
-            font-size: 15px;
+            width: 210px;
+            font-size: 16px;
             font-weight: 700;
-            margin-bottom: 46px;
+            margin-bottom: 28px;
         }
     }
 
@@ -127,38 +126,49 @@
         margin-right: 10px;
     }
 
-    .aboutButtons {
+    .aboutButtonsMobileAdaptiv {
+        display: block;
+
+        .buttoRocket{
+            width: 100%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #00A3FF;
+            color: white;
+            &:hover{
+                padding-left: 30px;
+                background: white;
+                color: black;
+            }
+            img {
+                width: 26px;
+                height: 26px;
+                background: transparent;
+                margin-left: 4px;
+            }
+        }
+
         button {
-            width: 92px;
-            height: 35px;
-            font-size: 15px;
+            width: 47%;
+            height: 38px;
             border-radius: 10px;
             border: 2px solid #00A3FF;
-
-            &:first-child {
-                margin-right: 10px;
-
-                &:hover {
-                    padding-left: 15px;
-                }
-            }
-
-            &:last-child {
+            background: white;
+            color: black;
+            font-size: 16px;
+            font-weight: 700;
+            transition: .5s;
+            cursor: pointer;
+            &:last-child{
                 margin-left: 10px;
-            }
-
-            img {
-                width: 20px;
-                height: 20px;
-                margin-left: 2px;
             }
         }
     }
 
     .gifBlock {
-        position: absolute;
-        left: 282px;
-        margin-left: 0px;
+        margin-left: 10px;
 
         img {
             width: 136px;

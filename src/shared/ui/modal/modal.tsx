@@ -1,5 +1,5 @@
 import styles from "./modal.module.scss";
-import { TModal } from "../../../types/TModal";
+import { TModal } from "../../types/TModal";
 
 export const Modal = ({ children, isOpen, className }: TModal) => {
   return (
