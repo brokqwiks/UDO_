@@ -26,65 +26,70 @@
 }
 
 .learnMainInfoAndImg {
-    display: flex;
     position: relative;
     background: #262732;
     border-radius: 20px;
 }
 
+
 .learnContent {
     display: flex;
     padding-top: 80px;
+}
 
-    .learnBtnsAndFAQ {
-        padding-bottom: 10px;
+.learnContentMobileAdaptiv {
+    display: block;
+}
 
-        p {
-            height: 59px;
+
+.learnBtnsAndFAQ {
+    padding-bottom: 10px;
+
+    p {
+        height: 59px;
+        padding-left: 46px;
+        font-size: 15px;
+        font-weight: 500;
+
+        a {
+            text-decoration: none;
+            color: #0066FF;
+        }
+    }
+
+    .learnBtnsContainer {
+        margin-bottom: 200px;
+        margin-right: 110px;
+
+        .learnButton {
+            display: flex;
+            align-items: center;
             padding-left: 46px;
-            font-size: 15px;
-            font-weight: 500;
+            width: 430px;
+            height: 89px;
+            font-size: 25px;
+            font-weight: 700;
+            color: white;
+            border-right: 6px solid #3C4173;
+            background: transparent;
+            cursor: pointer;
+            transition: .4s ease-in-out;
 
-            a {
-                text-decoration: none;
-                color: #0066FF;
+            &:focus {
+                background: #2E2F3E;
+                outline-style: none;
+                border: none;
+                border-right: 6px solid #2562FF;
             }
-        }
 
-        .learnBtnsContainer {
-            margin-bottom: 200px;
-            margin-right: 110px;
-
-            .learnButton {
-                display: flex;
-                align-items: center;
-                padding-left: 46px;
-                width: 430px;
-                height: 89px;
-                font-size: 25px;
-                font-weight: 700;
-                color: white;
-                border-right: 6px solid #3C4173;
-                background: transparent;
-                cursor: pointer;
-                transition: .4s ease-in-out;
-
-                &:focus {
-                    background: #2E2F3E;
-                    outline-style: none;
-                    border: none;
-                    border-right: 6px solid #2562FF;
-                }
-
-                img {
-                    width: 56px;
-                    height: 56px;
-                    margin-right: 46px;
-                }
-
+            img {
+                width: 56px;
+                height: 56px;
+                margin-right: 46px;
             }
 
         }
+
     }
 }
 
@@ -106,9 +111,110 @@
 
 .learnImg {
     height: 0;
+
     img {
         position: absolute;
         right: 0;
         height: 615px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .learnContainer {
+        margin-bottom: 80px;
+        padding-top: 80px;
+    }
+
+    .learnHeading {
+        margin-bottom: 10px;
+
+        h2 {
+            font-size: 34px;
+            margin-right: 10px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .learnProtectText {
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    .learnBtnsAndFAQ {
+        padding-bottom: 0;
+    
+        p {
+            height: 59px;
+            padding-left: 46px;
+            font-size: 15px;
+            font-weight: 500;
+    
+            a {
+                text-decoration: none;
+                color: #0066FF;
+            }
+        }
+    
+        .learnBtnsContainer {
+            display: flex;
+            margin-bottom: 24px;
+            margin-right: 0px;
+    
+            .learnButton {
+                display: flex;
+                justify-content: center;
+                padding-left: 0px;
+                width: 100%;
+                height: 52px;
+                background: transparent;
+                font-size: 16px;
+                border-right: none;
+                border-bottom: 2px solid #3C4173;
+    
+                &:focus {
+                    background: transparent;
+                    border-right: none;
+                    border-bottom: 2px solid #2562FF;
+                }
+    
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right:6px;
+                }
+    
+            }
+    
+        }
+    }
+    .learnInfo {
+        margin-left: 18px;
+        h3 {
+            font-size: 26px;
+            margin-bottom: 16px;
+        }
+    
+        p {
+            width: 306px;
+            padding-bottom: 16px;
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+    }
+    .learnImg {    
+        img {
+            display: block;
+            position: absolute;
+            width: 282px;
+            height: 294px;
+            margin: 0 auto;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
     }
 }

@@ -31,9 +31,14 @@ export const resources = {
 
         "sectionLearnTitle": 'Learn',
         "sectionLearnDescription": 'Protect your money with blockchain',
+
         "sectionLearnButtonSmartContract": 'Smart-Contracts',
+        "sectionLearnButtonSmartContractMobileAdaptiv": 'Contracts',
         "sectionLearnButtonSecurityWallet": 'Security Wallet',
+        "sectionLearnButtonSecurityWalletMobileAdaptiv": 'Wallet',
         "sectionLearnButtonDefi": 'DeFi',
+        "sectionLearnButtonDefiMobileAdaptiv": 'DeFi',
+
         "sectionLearnFAQ": 'More detailed information can be found on',
         
         "sectionLearnInfoTitleSmartContract": 'Data storage',
@@ -88,9 +93,14 @@ export const resources = {
 
         "sectionLearnTitle": 'Изучите',
         "sectionLearnDescription": 'Защитите свои деньги с помощью блокчейна',
+
         "sectionLearnButtonSmartContract": 'Смарт-контракты',
+        "sectionLearnButtonSmartContractMobileAdaptiv": 'Контракты',
         "sectionLearnButtonSecurityWallet": 'Секретный кошелёк',
+        "sectionLearnButtonSecurityWalletMobileAdaptiv": 'Кошелёк',
         "sectionLearnButtonDefi": 'Децентрилизация',
+        "sectionLearnButtonDefiMobileAdaptiv": 'Дефай',
+        
         "sectionLearnFAQ": 'Больше информации в нашем',
 
         "sectionLearnInfoTitleSmartContract": 'Хранилище данных',
