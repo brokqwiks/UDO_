@@ -6,7 +6,10 @@
 
 @media screen and (max-width: 480px) {
     .visitingPageWhiteContainer{
-        width: 390px;
+        width: 100%;
+        margin: 0;
+        margin-left: 25px;
+        padding-right: 25px;   
     }
 }
 
@@ -22,8 +25,12 @@
 
 @media screen and (max-width: 480px) {
     .visitingPageBlackContainer{
+        width: 110.7%;
         .visitingPageBlack{
-            width: 390px;     
+            width: 390px;
+            margin-left: 25px;
+            padding-right: 25px;
+            background-color: #0e0f1d;   
         }
     }
 }
@@ -35,6 +42,11 @@
     height: 4px; 
     background: linear-gradient(to right, #0170FF 30px, transparent 30px, transparent 60px, #00FFFF 60px);
     background-size: 60px 4px; 
+}
+@media screen and (max-width: 480px) {
+    .dottedBlue{
+        width: 110.7%;
+    }
 }
 
 .dottedWhite{

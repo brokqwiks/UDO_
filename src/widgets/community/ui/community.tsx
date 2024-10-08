@@ -1,7 +1,7 @@
 import styles from "./community.module.scss";
 import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 import { Button } from "../../../shared/ui/button";
-import { CommunityCard } from "../../communityCard";
+import { CommunityCard } from "../../../shared/ui/communityCard/communityCard";
 import user_icon from "/svg/users2.svg";
 import telegram_icon from "/svg/telegram.svg";
 import github_icon from "/svg/github.svg";
@@ -9,7 +9,9 @@ import twitter_icon from "/svg/twitter.svg";
 import question_icon from "/svg/question.svg";
 
 export const Community = () => {
+  
   const { t } = useMyTranslate();
+
   return (
     <section className={styles.communitySection}>
       <div className={styles.communityHeader}>

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import styles from './communityCard.module.scss';
-import { TTypeCard } from '../model/types';
+import { TCommunityCard } from '../../types/TCommunityCard';
 import { useMyTranslate } from '../../../app/translationText/useMyTranslate';
 
-export const CommunityCard = ({ icon, name, descr, url, aboutBtn }: TTypeCard) => {
+export const CommunityCard = ({ icon, name, descr, url, aboutBtn }: TCommunityCard) => {
 
     const [hover, setHover] = useState(false);
     const {i18n} = useMyTranslate()

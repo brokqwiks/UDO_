@@ -115,9 +115,11 @@
     img {
         position: absolute;
         right: 0;
+        bottom: 0;
         height: 615px;
     }
 }
+
 
 @media screen and (max-width: 480px) {
     .learnContainer {
@@ -140,6 +142,7 @@
     }
 
     .learnProtectText {
+        width: 320px;
         font-size: 16px;
         margin-bottom: 35px;
     }
@@ -199,7 +202,7 @@
         }
     
         p {
-            width: 306px;
+            
             padding-bottom: 16px;
             margin-bottom: 0;
             font-size: 16px;

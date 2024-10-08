@@ -1,4 +1,4 @@
-export type TTypeCard =  {
+export type TCommunityCard =  {
     icon: string;
     name: string;
     descr: string;

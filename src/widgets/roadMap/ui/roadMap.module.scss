@@ -1,6 +1,6 @@
 .roadMapSection {
     padding-top: 156px;
-    margin-bottom: 204px;
+    margin-bottom: 204px;   
 }
 
 .titleContainer {
@@ -98,7 +98,8 @@
 @media screen and (max-width: 480px) {
     .roadMapSection {
         padding-top: 80px;
-        margin-bottom: 80px;
+        margin-bottom: 0;
+        padding-bottom: 80px;
     }
     .titleContainer {
         margin-bottom: 59px;

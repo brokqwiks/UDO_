@@ -8,6 +8,7 @@ export const NavigationBar = ({
     <nav
       className={className}
       style={{
+        display: isOpen ? 'block' : 'none',
         opacity: isOpen ? 1 : 0,
         transition: "0.4s ease-in-out",
       }}
