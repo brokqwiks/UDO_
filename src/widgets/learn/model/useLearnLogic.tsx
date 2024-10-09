@@ -35,14 +35,14 @@ export const useLearnLogic = () => {
 
   useEffect(() => {
     if (buttonRef.current) {
-      buttonRef.current.focus();
-      window.scrollTo(0, 0);
+      buttonRef.current.focus()
+      window.scrollTo(0, 0)
     }
-    setSelectedDescription(() => descriptionLearn[0]);
+    setSelectedDescription(() => descriptionLearn[0])
   }, [t]);
 
   const handleDescriptionClick = (id: number) => {
     setSelectedDescription(() => descriptionLearn[id]);
   };
-  return { selectedDescription, handleDescriptionClick, buttonRef };
+  return { selectedDescription, handleDescriptionClick, buttonRef};
 };

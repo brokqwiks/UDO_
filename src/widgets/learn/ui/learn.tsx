@@ -8,9 +8,9 @@ import contact from "/svg/contract.svg";
 import toncoin2 from "/svg/toncoin2.svg";
 
 export const Learn = () => {
-  
   const { t, i18n } = useMyTranslate();
-  const { selectedDescription, handleDescriptionClick, buttonRef } = useLearnLogic();
+  const { selectedDescription, handleDescriptionClick, buttonRef } =
+    useLearnLogic();
 
   return (
     <section className={styles.learnContainer}>
@@ -59,9 +59,9 @@ export const Learn = () => {
                 className={styles.learnButton}
               >
                 <img src={block} alt="defi" />
-                {window.screen.width > 480 ? 
-                t("sectionLearnButtonDefi")
-                : t("sectionLearnButtonDefiMobileAdaptiv")}
+                {window.screen.width > 480
+                  ? t("sectionLearnButtonDefi")
+                  : t("sectionLearnButtonDefiMobileAdaptiv")}
               </Button>
             </div>
             {window.screen.width > 480 && (
@@ -69,7 +69,7 @@ export const Learn = () => {
                 {t("sectionLearnFAQ")} <a href="#">FAQ</a>
               </p>
             )}
-          </div> 
+          </div>
           <div
             className={styles.learnInfo}
             style={{
@@ -79,7 +79,7 @@ export const Learn = () => {
                   : "605px",
             }}
           >
-            <h3>{selectedDescription.title}</h3>  
+            <h3>{selectedDescription.title}</h3>
             <p>{selectedDescription.paragraf1}</p>
             <p>{selectedDescription.paragraf2}</p>
           </div>
@@ -87,7 +87,7 @@ export const Learn = () => {
         <div className={styles.learnImg}>
           <img loading="lazy" src={selectedDescription.imgDescription} alt="" />
         </div>
-      </aside> 
+      </aside>
     </section>
   );
 };

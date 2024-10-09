@@ -157,4 +157,34 @@
         margin-bottom: 10px;
         font-size: 50px;
     }
+    .modalContent {
+        width: 85%;
+        height: 350px;
+        border-radius: 10px;
+    
+        .gif6Dugs {
+            width: 35%;
+            height: 130px;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            width: 80%;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    
+        button {
+            width: 60%;
+            height: 35px;
+            border-radius: 10px;
+            font-size: 17px;
+    
+            img {
+                width: 18px;
+                height: 18px;
+                margin-right: 10px;
+            }
+        }
+    }
 }

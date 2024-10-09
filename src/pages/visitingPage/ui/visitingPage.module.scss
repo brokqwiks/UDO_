@@ -9,7 +9,7 @@
         width: 100%;
         margin: 0;
         margin-left: 25px;
-        padding-right: 25px;   
+        padding-right: 50px;
     }
 }
 
@@ -25,12 +25,10 @@
 
 @media screen and (max-width: 480px) {
     .visitingPageBlackContainer{
-        width: 110.7%;
         .visitingPageBlack{
-            width: 390px;
+            width: 100%;
             margin-left: 25px;
-            padding-right: 25px;
-            background-color: #0e0f1d;   
+            padding-right: 50px;
         }
     }
 }

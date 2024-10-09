@@ -24,7 +24,7 @@ export const VisitingPage = () => {
       <span className={styles.dottedBlue}></span>
 
       <TonBlock />
-      
+       
       <div className={styles.visitingPageBlackContainer}>
         <span className={styles.dottedWhite}></span>
         <div className={styles.visitingPageBlack}>

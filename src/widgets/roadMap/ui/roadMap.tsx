@@ -2,8 +2,12 @@ import styles from "./roadMap.module.scss";
 import { quarters } from "../model/quarters";
 import { QuarterSection } from "../model/quarterSection";
 import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
+import roadMap_line from '/icons/roadMap_line.png'
+import roadMap_line_mobile from '/icons/roadMap_line_mobile.png'
 export const RoadMap = () => {
+  
   const {t} = useMyTranslate()
+
   return (
     <section className={styles.roadMapSection}>
       <div className={styles.titleContainer}>
@@ -17,8 +21,8 @@ export const RoadMap = () => {
       <div className={styles.timelineContainer}>
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/8a0965edfb408b2efb89768401c3b4dd7fd99c70e5fbdae4e49dd2752e1758c4?placeholderIfAbsent=true&apiKey=3527a7c709f44ff99b5721dcacc53223"
-          alt=""
+          src={window.screen.width >= 480 ? roadMap_line : roadMap_line_mobile}
+          alt="roadMap_line"
           className={styles.timelineIcon}
         />
         <div className={styles.timelineContent}>

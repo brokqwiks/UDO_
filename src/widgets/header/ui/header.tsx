@@ -1,15 +1,14 @@
 import styles from "./header.module.scss";
-import { useState } from "react";
 import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 import { Button } from "../../../shared/ui/button";
 import { NavigationBar } from "../../../shared/ui/navigationBar";
 import icons_language from "/svg/icon_language.svg";
 import icons_bar from "/svg/icon_bars.svg";
+import { useHeaderLogic } from "../model/useHeaderLogic";
 
 export const Header = () => {
-
   const { t, changeLanguages, i18n } = useMyTranslate();
-  const [navBar, setNavBar] = useState(false);
+  const { navBar, setNavBar, scrollHeader } = useHeaderLogic();
 
   return (
     <header className={styles.header}>
@@ -73,16 +72,22 @@ export const Header = () => {
 
       <NavigationBar isOpen={navBar} className={styles.navigationBar}>
         <li>
-          <a href="#">{t("headerCommunity")} ˃</a>
+          <a onClick={() => scrollHeader(860)}>{t("headerCommunity")} ˃</a>
         </li>
         <li>
-          <a href="#">{t("headerLern")} ˃</a>
+          <a onClick={() => scrollHeader(2650)}>{t("headerLern")} ˃</a>
         </li>
         <li>
-          <a href="#">{t("headerRoadMap")} ˃</a>
+          <a
+            onClick={() =>
+              i18n.language === "en" ? scrollHeader(3600) : scrollHeader(3700)
+            }
+          >
+            {t("headerRoadMap")} ˃
+          </a>
         </li>
         <li>
-          <a href="#">{t("headerSupport")} ˃</a>
+          <a href="https://t.me/brokqwiks">{t("headerSupport")} ˃</a>
         </li>
       </NavigationBar>
     </header>

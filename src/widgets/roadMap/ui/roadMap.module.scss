@@ -31,8 +31,8 @@
     flex-wrap: wrap;
 
     .timelineIcon {
-        object-fit: cover;
-        width: 24px;
+        width: 30px;
+        height: 800px;
     }
 }
 
@@ -51,7 +51,7 @@
 .quarterSection {
     display: flex;
     align-self: stretch;
-    margin-bottom: 51px;
+    margin-bottom: 50px;
     h1{
         width: 284px;
         font-size: 46px;
@@ -60,7 +60,7 @@
 
 .milestoneContainer {
     display: flex;
-    width: 1092px;
+    width: 1030px;
     gap: 17px;
     flex-wrap: wrap;
     flex-basis: auto;
@@ -115,26 +115,30 @@
             width: 50px;
         }
     }
+
     .timelineContainer {
     
         .timelineIcon {
-            width: 27px;
-            height: 1050px;
+            width: 15px;
+            height: 980px;
         }
     }
+
     .quarterSection {
         display: block;
-        margin-bottom: 42px;
+        margin-bottom: 49px;
         h1{
+            width: 130px;
             font-size: 26px;
             margin-bottom: 18px;
         }
     }
+
     .milestoneContainer {
         display: flex;
         width: 190px;
-        margin-bottom: 42px;
     }
+
     .milestone {
         padding: 8px 12px;
         align-items: center;

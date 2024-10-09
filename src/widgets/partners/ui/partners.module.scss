@@ -58,7 +58,7 @@
     }
 
     .gif7Dugs {
-        width: 245;
+        width: 245px;
         height: 245px;
         margin-bottom: 40px;
     }
@@ -126,6 +126,36 @@
                 img{
                     margin-right: 0;
                 }
+            }
+        }
+    }
+    .modalContentPartners {
+        width: 85%;
+        height: 350px;
+        border-radius: 10px;
+    
+        .gif7Dugs {
+            width: 35%;
+            height: 130px;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            width: 70%;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    
+        button {
+            width: 60%;
+            height: 35px;
+            border-radius: 10px;
+            font-size: 17px;
+            margin-bottom: 25px;
+            img {
+                width: 18px;
+                height: 18px;
+                margin-right: 10px;
             }
         }
     }

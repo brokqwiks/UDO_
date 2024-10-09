@@ -107,24 +107,25 @@
 
     .aboutHeader {
         width: 100%;
-
+        .aboutText {
+            margin-right: 10px;
+        }
         h1 {
-            font-size: 33px;
-            word-spacing: 2px;
+            font-size: 28px;
+            word-spacing: 0px;
             margin-bottom: 12px;
         }
+        
 
         p {
             width: 210px;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
-            margin-bottom: 28px;
+            margin-bottom: 15px;
         }
     }
 
-    .aboutText {
-        margin-right: 10px;
-    }
+    
 
     .aboutButtonsMobileAdaptiv {
         display: block;
@@ -169,10 +170,9 @@
 
     .gifBlock {
         margin-left: 10px;
-
         img {
-            width: 136px;
-            height: 136px;
+            width: 125px;
+            height: 125px;
             justify-self: center;
             align-self: center;
         }
