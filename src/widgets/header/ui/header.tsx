@@ -20,16 +20,24 @@ export const Header = () => {
           <nav className={styles.navigation}>
             <ul>
               <li>
-                <a href="#">{t("headerCommunity")}</a>
+                <Button onClick={() => scrollHeader(1680)}>
+                  {t("headerCommunity")}
+                </Button>
               </li>
               <li>
-                <a href="#">{t("headerLern")}</a>
+                <Button onClick={() => scrollHeader(4620)}>
+                  {t("headerLern")}
+                </Button>
               </li>
               <li>
-                <a href="#">{t("headerRoadMap")}</a>
+                <Button onClick={() => scrollHeader(5900)}>
+                  {t("headerRoadMap")}
+                </Button>
               </li>
               <li>
-                <a href="#">{t("headerSupport")}</a>
+                <Button onClick={() => "https://t.me/brokqwiks"}>
+                  {t("headerSupport")}
+                </Button>
               </li>
               <li>
                 {i18n.language == "ru" ? (
@@ -72,22 +80,28 @@ export const Header = () => {
 
       <NavigationBar isOpen={navBar} className={styles.navigationBar}>
         <li>
-          <a onClick={() => scrollHeader(860)}>{t("headerCommunity")} ˃</a>
+          <Button onClick={() => scrollHeader(860)}>
+            {t("headerCommunity")} ˃
+          </Button>
         </li>
         <li>
-          <a onClick={() => scrollHeader(2650)}>{t("headerLern")} ˃</a>
+          <Button onClick={() => scrollHeader(2630)}>
+            {t("headerLern")} ˃
+          </Button>
         </li>
         <li>
-          <a
+          <Button
             onClick={() =>
               i18n.language === "en" ? scrollHeader(3600) : scrollHeader(3700)
             }
           >
             {t("headerRoadMap")} ˃
-          </a>
+          </Button>
         </li>
         <li>
-          <a href="https://t.me/brokqwiks">{t("headerSupport")} ˃</a>
+          <Button onClick={() => "https://t.me/brokqwiks"}>
+            {t("headerSupport")} ˃
+          </Button>
         </li>
       </NavigationBar>
     </header>

@@ -7,7 +7,7 @@ export const CommunityCard = ({ icon, name, descr, url, aboutBtn }: TCommunityCa
 
     const [hover, setHover] = useState(false);
     const {i18n} = useMyTranslate()
-    
+
     return (
         <article
             className={styles.cardMain}
@@ -17,12 +17,12 @@ export const CommunityCard = ({ icon, name, descr, url, aboutBtn }: TCommunityCa
             <img loading="lazy" src={icon} alt="" />
             <h1>{name}</h1>
             <p style={{width: i18n.language == 'en' ? '255px' : '336px' }}>{descr}</p>
-            <a href={url} target='_blank' id='123'>
+            <a href={url} target='_blank' rel="noopener" id='123'>
                 {aboutBtn}
                 <span
                     style={{
                         display: 'inline-block',
-                        transform: hover ? 'translateX(20px)' : 'translateX(0)',
+                        transform: hover ? window.screen.width > 480 ? 'translateX(20px)' : 'translateX(6px)' : 'translateX(0)',
                         transition: 'transform 0.3s ease-in-out',
                     }}
                 >

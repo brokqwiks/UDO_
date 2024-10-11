@@ -36,7 +36,7 @@ export const Learn = () => {
                   handleDescriptionClick(0);
                 }}
               >
-                <img src={contact} alt="smart-contract" />
+                <img src={contact} />
 
                 {window.screen.width > 480
                   ? t("sectionLearnButtonSmartContract")
@@ -47,7 +47,7 @@ export const Learn = () => {
                 onClick={() => handleDescriptionClick(1)}
                 className={styles.learnButton}
               >
-                <img src={toncoin2} alt="security-wallet" />
+                <img src={toncoin2} />
 
                 {window.screen.width > 480
                   ? t("sectionLearnButtonSecurityWallet")
@@ -58,7 +58,7 @@ export const Learn = () => {
                 onClick={() => handleDescriptionClick(2)}
                 className={styles.learnButton}
               >
-                <img src={block} alt="defi" />
+                <img src={block} />
                 {window.screen.width > 480
                   ? t("sectionLearnButtonDefi")
                   : t("sectionLearnButtonDefiMobileAdaptiv")}

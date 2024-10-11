@@ -1,12 +1,12 @@
 import styles from "./about.module.scss";
 import { Button } from "../../../shared/ui/button/button";
+import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 import duck1 from "/gif/duck1.gif";
 import duck2 from "/gif/duck2.gif";
 import duck3 from "/gif/duck3.gif";
 import duck4 from "/gif/duck4.gif";
 import duck5 from "/gif/duck5.gif";
 import rocket from "/svg/rocket.svg";
-import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 
 export const About = () => {
   const {t} = useMyTranslate()

@@ -9,7 +9,7 @@ export const useLearnLogic = () => {
       title: t("sectionLearnInfoTitleSmartContract"),
       paragraf1: t("sectionLearnInfoParagraf1SmartContract"),
       paragraf2: t("sectionLearnInfoParagraf2SmartContract"),
-      imgDescription: "/icons/decentralisation.png",
+      imgDescription: window.screen.width > 480 ? "/icons/decentralisation.png" : "/icons/decentralisation_mobilka.png",
     },
     {
       id: 2,

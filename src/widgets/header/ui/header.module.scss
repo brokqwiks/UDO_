@@ -35,17 +35,7 @@
             color: #000;
             font-size: 20px;
             padding: 10px;
-
-            a {
-                
-                text-decoration: none;
-                color: #000;
-                font-weight: 800;
-                transition: .5s;
-                &:hover {
-                    color: rgba(0, 0, 0, 0.6)
-                }
-            }
+            cursor: pointer;
             &:last-child{
                 position: absolute;
                 right: 0;
@@ -124,7 +114,9 @@
             padding-left: 25px;
             list-style: none;
             margin-bottom: 30px;
-            a{
+            cursor: pointer;
+            button{
+                background: transparent;
                 color: white;
                 font-size: 18px;
                 font-weight: 500;

@@ -43,7 +43,7 @@ export const Community = () => {
           name={"Twitter"}
           descr={t("sectionCardTwitterDesc")}
           aboutBtn={t("sectionCardButtonSubscribe")}
-          url="https://t.me/udo_ton"
+          url="https://x.com/udomarket?s=21"
         />
       </div>
       {window.screen.width > 480 && (

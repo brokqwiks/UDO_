@@ -75,7 +75,7 @@ export const TonBlock = () => {
           <span>TON Connect</span> {t("sectionTonWalleDesc")}
         </p>
       </div>
-      <Button>
+      <Button onClick={() => open('https://ton.tg/ru/wallets')}>
         {t("sectionTonWalletButton")}
         <img loading="lazy" src={toncoin_icon3} alt="toncoin_icon3" />
       </Button>

@@ -9,17 +9,21 @@ export const Footer = () => {
       <div className={styles.footerContant}>
         <h2>UDO Team</h2>
         <div>
-        <a href="#" target="_blank">
-          <img loading="lazy" src={telegram_footer} alt="" />
-        </a>
-        <a href="#" target="_blank">
-          <img loading="lazy" src={github_footer} alt="" />
-        </a>
-        <a href="#" target="_blank">
-          <img loading="lazy" src={twitter_footer} alt="" />
-        </a>
+          <a href="https://t.me/udo_ton" target="_blank" rel="noopener">
+            <img loading="lazy" src={telegram_footer} alt="" />
+          </a>
+          <a
+            href="https://github.com/brokqwiks/ton-marketplace"
+            target="_blank"  
+            rel="noopener"
+          >
+            <img loading="lazy" src={github_footer} alt="" />
+          </a>
+          <a href="https://x.com/udomarket?s=21" target="_blank" rel="noopener">
+            <img loading="lazy" src={twitter_footer} alt="" />
+          </a>
         </div>
-        
+
         <p>Powered by TON Blockchain</p>
       </div>
     </footer>
