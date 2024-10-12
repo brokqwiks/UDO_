@@ -11,7 +11,6 @@ node_modules
 dist
 dist-ssr
 *.local
-*.svg text eol=lf
 
 # Editor directories and files
 .vscode/*
