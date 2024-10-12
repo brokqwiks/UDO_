@@ -12,6 +12,7 @@
 }
 
 
+
 @media screen and (max-width: 480px) {
     .header {
         position: fixed;
@@ -43,8 +44,7 @@
             padding-left: 25px;
             list-style: none;
             margin-bottom: 30px;
-
-            button {
+            button{
                 background: transparent;
                 color: white;
                 font-size: 18px;

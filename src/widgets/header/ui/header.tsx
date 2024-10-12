@@ -14,10 +14,12 @@ export const Header = () => {
     <header className={styles.header}>
       
       <div className={styles.container}>
+
         <Logo/>
 
         <NavigationHeader i18n={i18n} t={t} navBar={navBar} changeLanguages={changeLanguages} setNavBar={setNavBar} scrollHeader={scrollHeader}/>
       
+
       </div>
 
 

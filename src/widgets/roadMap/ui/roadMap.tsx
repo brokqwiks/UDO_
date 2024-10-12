@@ -5,6 +5,8 @@ import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 import roadMap_line from '/icons/roadMap_line.png'
 import roadMap_line_mobile from '/icons/roadMap_line_mobile.png'
 import icon_roadMap from '/svg/icon_roadMap.svg'
+
+
 export const RoadMap = () => {
   
   const {t} = useMyTranslate()
