@@ -19,7 +19,7 @@ export const Community = () => {
         <img
           loading="lazy"
           src={user_icon}
-          alt=""
+          alt="user_icon"
           className={styles.userIcon}
         />
       </div>
@@ -36,20 +36,20 @@ export const Community = () => {
           name={"GitHub"}
           descr={t("sectionCardGitHubDesc")}
           aboutBtn={t("sectionCardButtonLearnCode")}
-          url="https://github.com/brokqwiks/ton-marketplace"
+          url="https://github.com/brokqwiks/UDO_"
         />
         <CommunityCard
           icon={twitter_icon}
           name={"Twitter"}
           descr={t("sectionCardTwitterDesc")}
           aboutBtn={t("sectionCardButtonSubscribe")}
-          url="https://t.me/udo_ton"
+          url="https://x.com/udomarket?s=21"
         />
       </div>
       {window.screen.width > 480 && (
-        <Button className={styles.contactButton}>
+        <Button className={styles.contactButton} onClick={() => open('https://t.me/brokqwiks')}>
           {t("sectionButtonContact")}
-          <img loading="lazy" src={question_icon} alt="" />
+          <img loading="lazy" src={question_icon} alt="question_icon" />
         </Button>
       )}
     </section>

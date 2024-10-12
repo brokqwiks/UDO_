@@ -1,1 +1,1 @@
-export { CommunityCard } from './ui/communityCard'
+export { CommunityCard } from './communityCard'

@@ -4,15 +4,18 @@ export type TQuarters = {
   milestones: Array<{
     iconSrc?: string;
     text: string;
+    color: string
   }>;
 };
 export type TMilestoneProps = {
     iconSrc: string | undefined;
     text: string;
+    color: string
   }
 export type TMilestoneData = {
   iconSrc?: string;
   text: string;
+  color: string
 };
 
 export type TQuarterSectionProps = {

@@ -18,20 +18,21 @@ export const Partners = () => {
 
   return (
     <section className={styles.partnersContainer}>
+
       <div className={styles.partnersHeading}>
         <h2>{t('sectionOurPartners')}</h2>
         <img loading="lazy" src={partners_icon_users} alt="partners_icon_users" />
       </div>
+
       <div className={styles.allPartners}>
-        <img loading="lazy" src={ton_nest_lvl2} alt="ton_nest" />
-        <img loading="lazy" src={move_partner} alt="move_partner" />
-        {/*<img loading="lazy" src="" alt="" />
-        <img loading="lazy" src="" alt="" />
-        <img loading="lazy" src="" alt="" />  */}
+        <a href="https://eco.ton.org/en/opportunities/ton-nest" target="_blank"><img loading="lazy" src={ton_nest_lvl2} alt="ton_nest" /></a>
+        <a href="https://t.me/moveonton" target="_blank"  ><img loading="lazy" src={move_partner} alt="move_partner" /></a>
         <Button onClick={() => setModal(!modal)}>
           <img loading="lazy" src={add_new_partners} alt="add_new_partners" />
         </Button>
+
       </div>
+
       <Modal isOpen={modal} className={styles.modalContentPartners}>
           <span onClick={() => setModal(false)}>x</span>
           <img loading="lazy" src={gif_7} alt="gif_7_dugs" className={styles.gif7Dugs} />
@@ -41,10 +42,12 @@ export const Partners = () => {
               setModal(false);
             }}
           >
-            <img loading="lazy" src={telegram} alt="telegram" /> Telegram
+            <img loading="lazy" src={telegram} alt="telegram" /> 
+            Telegram
           </Button>
           <p>{t('sectionModalOurPartners')}</p>
       </Modal>
+      
     </section>
   );
 };

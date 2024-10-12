@@ -1,0 +1,68 @@
+.navigation {
+    justify-self: center;
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 80px;
+
+        li {
+            text-decoration: none;
+            color: #000;
+            padding: 10px;
+
+            &:last-child {
+                position: absolute;
+                right: 0;
+            }
+
+            button {
+                background: transparent;
+                color: #000;
+                font-size: 20px;
+                font-weight: 800;
+                cursor: pointer;
+                transition: .5s;
+
+                &:hover {
+                    color: rgba(0, 0, 0, 0.6)
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navigationAdaptiv {
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                font-size: 20px;
+                padding: 0;
+
+                button {
+                    background: transparent;
+                    cursor: pointer;
+                }
+
+                .buttonAdaptiveLang {
+                    display: flex;
+                    margin-right: 14px;
+
+                    button {
+                        margin-right: 9px;
+                    }
+
+                    h4 {
+                        width: 31px;
+                        text-align: center;
+                    }
+                }
+
+
+            }
+        }
+    }
+}

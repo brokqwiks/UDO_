@@ -1,0 +1,24 @@
+.logo {
+    display: flex;
+    align-self: center;
+    img{
+        width: 70px;
+        height: 70px;
+        align-self: center;
+        margin-right: 7px;
+    }
+    h1 {
+        font-size: 50px;
+        color: #000;
+        font-weight: 800;
+        text-align: left;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    .logo {
+        h1 {
+            font-size: 28px;
+        }
+    }
+}

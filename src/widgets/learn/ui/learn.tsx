@@ -18,7 +18,9 @@ export const Learn = () => {
         <h2>{t("sectionLearnTitle")}</h2>
         <img loading="lazy" src={app} alt="" />
       </div>
+
       <p className={styles.learnProtectText}>{t("sectionLearnDescription")}</p>
+
       <aside className={styles.learnMainInfoAndImg}>
         <div
           className={
@@ -59,17 +61,20 @@ export const Learn = () => {
                 className={styles.learnButton}
               >
                 <img src={block} alt="defi" />
+
                 {window.screen.width > 480
                   ? t("sectionLearnButtonDefi")
                   : t("sectionLearnButtonDefiMobileAdaptiv")}
               </Button>
             </div>
+
             {window.screen.width > 480 && (
               <p>
                 {t("sectionLearnFAQ")} <a href="#">FAQ</a>
               </p>
             )}
           </div>
+
           <div
             className={styles.learnInfo}
             style={{
@@ -84,6 +89,7 @@ export const Learn = () => {
             <p>{selectedDescription.paragraf2}</p>
           </div>
         </div>
+
         <div className={styles.learnImg}>
           <img loading="lazy" src={selectedDescription.imgDescription} alt="" />
         </div>

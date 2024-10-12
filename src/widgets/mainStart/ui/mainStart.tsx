@@ -16,6 +16,7 @@ export const MainStart = () => {
 
   return (
     <main className={styles.mainSection}>
+
       <div className={styles.mainContent}>
         <div className={styles.logoUdoContainer}>
           <h1>{displayedText}</h1>

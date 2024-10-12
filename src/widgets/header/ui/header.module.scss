@@ -11,58 +11,6 @@
     width: 100%;
 }
 
-.logo {
-    align-self: center;
-    h1 {
-        font-size: 50px;
-        color: #000;
-        font-weight: 800;
-        text-align: left;
-        align-self: center;
-    }
-}
-
-
-.navigation {
-    justify-self: center;
-    ul {
-        display: flex;
-        list-style: none;
-        gap: 80px;
-
-        li {
-            text-decoration: none;
-            color: #000;
-            font-size: 20px;
-            padding: 10px;
-
-            a {
-                
-                text-decoration: none;
-                color: #000;
-                font-weight: 800;
-                transition: .5s;
-                &:hover {
-                    color: rgba(0, 0, 0, 0.6)
-                }
-            }
-            &:last-child{
-                position: absolute;
-                right: 0;
-            }
-            button{
-                background: transparent;
-                color: #000;
-                font-weight: 800;
-                cursor: pointer;
-                transition: .5s;
-                &:hover {
-                    color: rgba(0, 0, 0, 0.6)
-                }
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 480px) {
     .header {
@@ -73,45 +21,15 @@
         padding: 17px 24px;
         background: white;
     }
-    .logo {
-        h1 {
-            font-size: 28px;
-        }
-    }
-    .container{
+
+
+    .container {
         display: flex;
         position: relative;
         justify-content: space-between;
     }
 
-    .navigationAdaptiv {
-        ul {
-            display: flex;
-            list-style: none;
-            li {
-                font-size: 20px;
-                padding: 0;
-                button{
-                    background: transparent;
-                    cursor: pointer;
-                }
-                .buttonAdaptiveLang{
-                    display: flex;
-                    margin-right: 14px;
-                    button{
-                        margin-right: 9px;
-                    }
-                    h4{
-                        width: 31px;
-                        text-align: center;
-                    }
-                }
-                
-                
-            }
-        }
-    }
-    .navigationBar{
+    .navigationBar {
         position: fixed;
         left: 0;
         right: 0;
@@ -120,11 +38,14 @@
         padding-top: 28px;
         background-color: rgba(33, 33, 33, 0.99);
         backdrop-filter: blur(8px);
-        li{
+
+        li {
             padding-left: 25px;
             list-style: none;
             margin-bottom: 30px;
-            a{
+
+            button {
+                background: transparent;
                 color: white;
                 font-size: 18px;
                 font-weight: 500;

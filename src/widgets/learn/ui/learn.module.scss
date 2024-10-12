@@ -35,6 +35,7 @@
 .learnContent {
     display: flex;
     padding-top: 80px;
+    height: 615px;
 }
 
 .learnContentMobileAdaptiv {
@@ -46,7 +47,9 @@
     padding-bottom: 10px;
 
     p {
-        height: 59px;
+        position: relative;
+        bottom: 0;
+        // height: 59px;
         padding-left: 46px;
         font-size: 15px;
         font-weight: 500;
@@ -173,14 +176,21 @@
             .learnButton {
                 display: flex;
                 justify-content: center;
-                padding-left: 0px;
-                width: 100%;
+                padding-left: 0;
                 height: 52px;
                 background: transparent;
                 font-size: 16px;
                 border-right: none;
                 border-bottom: 2px solid #3C4173;
-    
+                &:first-child{
+                    width: 100%;
+                }
+                &:nth-child(2){
+                    width: 90%;
+                }
+                &:last-child{
+                    width: 76%;
+                }
                 &:focus {
                     background: transparent;
                     border-right: none;
