@@ -1,0 +1,16 @@
+.logo {
+    display: flex;
+    align-self: center;
+    img{
+        height: 70px;
+        align-self: center;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .logo {
+        img {
+            height: 40px;
+        }
+    }
+}

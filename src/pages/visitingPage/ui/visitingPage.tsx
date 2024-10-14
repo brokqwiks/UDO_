@@ -16,14 +16,15 @@ export const VisitingPage = () => {
         <Header />
         <MainStart />
 
-        <About />
+         <About />
 
-        <Community />
+         <Community />
       </div>
 
       <span className={styles.dottedBlue}></span>
 
       <TonBlock />
+       
       <div className={styles.visitingPageBlackContainer}>
         <span className={styles.dottedWhite}></span>
         <div className={styles.visitingPageBlack}>
@@ -32,12 +33,12 @@ export const VisitingPage = () => {
         </div>
 
         <span className={styles.dottedWhite}></span>
-
+       
         <div className={styles.visitingPageBlack}>
           <Partners />
           <Footer />
-        </div>
-      </div>
+        </div> 
+       </div> 
     </>
   );
 };

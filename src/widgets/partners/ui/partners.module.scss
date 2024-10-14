@@ -58,7 +58,7 @@
     }
 
     .gif7Dugs {
-        width: 245;
+        width: 245px;
         height: 245px;
         margin-bottom: 40px;
     }
@@ -89,5 +89,73 @@
         font-size: 40px;
         font-weight: 700;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .partnersContainer {
+        padding-top: 84px;
+        margin-bottom: 80px;
+
+        .partnersHeading {
+            h2 {
+                margin-right: 10px;
+                font-size: 33px;
+            }
+            img{
+                width: 50px;
+                height: 50px;
+            }
+    
+        }
+        .allPartners {
+            width: 100%;
+            height: 100%;
+            margin-top: 50px;
+
+            img {
+                width: 85px;
+                height: 85px;
+                margin-right: 38px;
+                margin-bottom: 30px;
+            }
+            button {
+                width: 85px;
+                height: 85px;
+                img{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .modalContentPartners {
+        width: 85%;
+        height: 350px;
+        border-radius: 10px;
+    
+        .gif7Dugs {
+            width: 35%;
+            height: 130px;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            width: 70%;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    
+        button {
+            width: 60%;
+            height: 35px;
+            border-radius: 10px;
+            font-size: 17px;
+            margin-bottom: 25px;
+            img {
+                width: 18px;
+                height: 18px;
+                margin-right: 10px;
+            }
+        }
     }
 }

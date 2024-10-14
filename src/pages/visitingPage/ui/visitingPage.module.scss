@@ -1,8 +1,18 @@
 .visitingPageWhiteContainer{
     display: block;
     width: 1428px;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
+
+@media screen and (max-width: 480px) {
+    .visitingPageWhiteContainer{
+        width: 100%;
+        margin: 0;
+        margin-left: 25px;
+        padding-right: 50px;
+    }
+}
+
 .visitingPageBlackContainer{
     display: block;
     padding-top: 24px;
@@ -12,6 +22,17 @@
         margin: 0 auto;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .visitingPageBlackContainer{
+        .visitingPageBlack{
+            width: 100%;
+            margin-left: 25px;
+            padding-right: 50px;
+        }
+    }
+}
+
 .dottedBlue{
     display: block;
     width: 100%;
@@ -20,6 +41,12 @@
     background: linear-gradient(to right, #0170FF 30px, transparent 30px, transparent 60px, #00FFFF 60px);
     background-size: 60px 4px; 
 }
+@media screen and (max-width: 480px) {
+    .dottedBlue{
+        width: 110.7%;
+    }
+}
+
 .dottedWhite{
     display: block;
     width: 100%;

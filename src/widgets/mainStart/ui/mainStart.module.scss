@@ -7,6 +7,7 @@
 
 .mainContent {
     text-align: center;
+
     p {
         width: 600px;
         margin: 0 auto;
@@ -38,14 +39,15 @@
     }
 }
 
+
 .logoUdoContainer {
     display: inline-block;
-    height: 170px;
-
+    width: 144px;
     h1 {
+        
+        height: 153px;
         font-size: 90px;
         font-weight: bold;
-        margin-bottom: 34px;
         white-space: nowrap;
         overflow: hidden;
         width: fit-content;
@@ -79,12 +81,14 @@
     background: white;
     border-radius: 20px;
     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
-    span{
+
+    span {
         position: absolute;
         top: 10px;
         right: 30px;
         cursor: pointer;
     }
+
     .gif6Dugs {
         width: 228px;
         height: 228px;
@@ -116,6 +120,71 @@
             width: 23px;
             height: 23px;
             margin-right: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainSection {
+        padding-top: 146px;
+        margin-bottom: 80px;
+    }
+
+    .mainContent {
+        p {
+            width: 80%;
+            margin-bottom: 28px;
+            font-size: 15px;
+        }
+
+        button {
+            width: 134px;
+            height: 36px;
+            font-size: 16px;
+        }
+    }
+
+    .logoUdoContainer {
+        h1 {
+            height: 79px;
+            font-size: 60px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .highlight {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 50px;
+    }
+    .modalContent {
+        width: 85%;
+        height: 350px;
+        border-radius: 10px;
+    
+        .gif6Dugs {
+            width: 35%;
+            height: 130px;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            width: 80%;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    
+        button {
+            width: 60%;
+            height: 35px;
+            border-radius: 10px;
+            font-size: 17px;
+    
+            img {
+                width: 18px;
+                height: 18px;
+                margin-right: 10px;
+            }
         }
     }
 }
