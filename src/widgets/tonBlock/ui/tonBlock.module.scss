@@ -27,6 +27,7 @@
         }
 
         img {
+            
             background: none;
             padding-left: 20px;
         }
@@ -35,7 +36,6 @@
 
 .headerBlock {
     display: flex;
-    align-items: baseline;
     margin-bottom: 134px;
 
     h1 {
@@ -48,6 +48,11 @@
             -webkit-text-fill-color: transparent;
             white-space: nowrap;
         }
+    }
+    img{
+        width: 96px;
+        height: 96px;
+        align-items: baseline;
     }
 }
 
@@ -125,8 +130,8 @@
         }
 
         img {
-            width: 30px;
-            height: 30px;
+            width: 50px;
+            height: 50px;
         }
     }
 

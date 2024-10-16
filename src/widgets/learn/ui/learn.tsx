@@ -1,22 +1,20 @@
 import styles from "./learn.module.scss";
-import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 import { useLearnLogic } from "../model/useLearnLogic";
-import { Button } from "../../../shared/ui/button";
-import app from "/svg/app.svg";
+import { LearnButton } from "../../../shared/ui/learnButton/learnButton";
+import icon_learn from "/icons/icon_learn.png";
 import block from "/svg/block.svg";
 import contact from "/svg/contract.svg";
 import toncoin2 from "/svg/toncoin2.svg";
 
 export const Learn = () => {
-  const { t, i18n } = useMyTranslate();
-  const { selectedDescription, handleDescriptionClick, buttonRef } =
+  const { selectedDescription, handleDescriptionClick, buttonRef, buttonTexts, t, i18n} =
     useLearnLogic();
 
   return (
     <section className={styles.learnContainer}>
       <div className={styles.learnHeading}>
         <h2>{t("sectionLearnTitle")}</h2>
-        <img loading="lazy" src={app} alt="" />
+        <img src={icon_learn} alt="icon_learn" />
       </div>
 
       <p className={styles.learnProtectText}>{t("sectionLearnDescription")}</p>
@@ -31,46 +29,36 @@ export const Learn = () => {
         >
           <div className={styles.learnBtnsAndFAQ}>
             <div className={styles.learnBtnsContainer}>
-              <Button
-                className={styles.learnButton}
-                refButton={buttonRef}
-                onClick={() => {
-                  handleDescriptionClick(0);
-                }}
-              >
-                <img src={contact} />
-
-                {window.screen.width > 480
-                  ? t("sectionLearnButtonSmartContract")
-                  : t("sectionLearnButtonSmartContractMobileAdaptiv")}
-              </Button>
-
-              <Button
+            <LearnButton
                 onClick={() => handleDescriptionClick(1)}
-                className={styles.learnButton}
-              >
-                <img src={toncoin2} />
+                imgSrc={contact}
+                text={buttonTexts.smartContract}
+                refButton={buttonRef}
+              />
 
-                {window.screen.width > 480
-                  ? t("sectionLearnButtonSecurityWallet")
-                  : t("sectionLearnButtonSecurityWalletMobileAdaptiv")}
-              </Button>
-
-              <Button
+              <LearnButton
+                imgSrc={toncoin2}
                 onClick={() => handleDescriptionClick(2)}
-                className={styles.learnButton}
-              >
-                <img src={block} alt="defi" />
-                
-                {window.screen.width > 480
-                  ? t("sectionLearnButtonDefi")
-                  : t("sectionLearnButtonDefiMobileAdaptiv")}
-              </Button>
+                text={buttonTexts.securityWallet}
+              />
+
+              <LearnButton
+                imgSrc={block}
+                onClick={() => handleDescriptionClick(3)}
+                text={buttonTexts.defi}
+              />
             </div>
 
             {window.screen.width > 480 && (
               <p>
-                {t("sectionLearnFAQ")} <a href="#">FAQ</a>
+                {t("sectionLearnFAQ")} {""}
+                <a
+                  href="https://spicy-plot-110.notion.site/Smart-Contracts-11f9787787f180d9856acdee66c3a4f8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  FAQ
+                </a>
               </p>
             )}
           </div>
@@ -91,7 +79,7 @@ export const Learn = () => {
         </div>
 
         <div className={styles.learnImg}>
-          <img loading="lazy" src={selectedDescription.imgDescription} alt="" />
+          <img src={selectedDescription.imgDescription} alt="img_description" />
         </div>
       </aside>
     </section>

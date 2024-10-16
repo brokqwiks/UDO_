@@ -11,6 +11,10 @@
             font-weight: 800;
             color: #fff;
         }
+        img{
+            width: 96px;
+            height: 96px;
+        }
 
     }
 
@@ -35,6 +39,10 @@
             margin-right: 107px;
             margin-bottom: 107px;
             border-radius: 20px;
+            transition: .4s ease-in-out;
+            &:hover{
+                transform: scale(1.04);
+            }
         }
     }
 }

@@ -25,16 +25,15 @@ export const About = () => {
           </p>
         </div>
         <div className={window.screen.width > 480 ? styles.aboutButtons : styles.aboutButtonsMobileAdaptiv}>
-          <Button className={styles.buttoRocket}>{t('sectionAboutButtonFast')} <img loading="lazy" src={rocket} alt="" /></Button>
+          <Button className={styles.buttoRocket}>{t('sectionAboutButtonFast')} <img src={rocket} alt="rocket" /></Button>
           <Button>{t('sectionAboutButtonSafe')}</Button>
           <Button onClick={() => open('https://t.me/brokqwiks')}>{t('sectionAboutButtonSupport')}</Button>
         </div>
       </div>
       <div className={styles.gifBlock}>
         <img
-          loading="lazy"
           src={gif_array[Math.floor(Math.random() * gif_array.length)]}
-          alt=""
+          alt="gif_dugs"
         />
       </div>
     </section>

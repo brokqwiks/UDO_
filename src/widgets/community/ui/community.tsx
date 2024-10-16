@@ -2,10 +2,10 @@ import styles from "./community.module.scss";
 import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 import { Button } from "../../../shared/ui/button";
 import { CommunityCard } from "../../../shared/ui/communityCard/communityCard";
-import user_icon from "/svg/users2.svg";
-import telegram_icon from "/svg/telegram.svg";
-import github_icon from "/svg/github.svg";
-import twitter_icon from "/svg/twitter.svg";
+import user_icon from "/icons/user_icon_community.png";
+import telegram_icon from "/icons/icon_tg.png";
+import github_icon from "/icons/icon_github.png";
+import twitter_icon from "/icons/icon_twitter.png";
 import question_icon from "/svg/question.svg";
 
 export const Community = () => {
@@ -17,7 +17,6 @@ export const Community = () => {
       <div className={styles.communityHeader}>
         <h1>{t("sectionCommunityTitle")}</h1>
         <img
-          loading="lazy"
           src={user_icon}
           alt="user_icon"
           className={styles.userIcon}
@@ -49,7 +48,7 @@ export const Community = () => {
       {window.screen.width > 480 && (
         <Button className={styles.contactButton} onClick={() => open('https://t.me/brokqwiks')}>
           {t("sectionButtonContact")}
-          <img loading="lazy" src={question_icon} alt="question_icon" />
+          <img src={question_icon} alt="question_icon" />
         </Button>
       )}
     </section>

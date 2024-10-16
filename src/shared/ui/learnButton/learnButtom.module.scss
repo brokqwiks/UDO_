@@ -1,0 +1,61 @@
+.learnButton {
+    display: flex;
+    align-items: center;
+    padding-left: 46px;
+    width: 430px;
+    height: 89px;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    border-right: 6px solid #3C4173;
+    background: transparent;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+
+    &:focus {
+        background: #2E2F3E;
+        outline-style: none;
+        border: none;
+        border-right: 6px solid #2562FF;
+    }
+
+    img {
+        width: 56px;
+        height: 56px;
+        margin-right: 46px;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .learnButton {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        height: 52px;
+        background: transparent;
+        font-size: 16px;
+        border-right: none;
+        border-bottom: 2px solid #3C4173;
+        &:first-child{
+            width: 100%;
+        }
+        &:nth-child(2){
+            width: 90%;
+        }
+        &:last-child{
+            width: 76%;
+        }
+        &:focus {
+            background: transparent;
+            border-right: none;
+            border-bottom: 2px solid #2562FF;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            margin-right:6px;
+        }
+
+    }
+}

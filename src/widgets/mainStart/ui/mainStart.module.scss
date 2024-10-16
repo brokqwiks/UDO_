@@ -42,9 +42,8 @@
 
 .logoUdoContainer {
     display: inline-block;
-    width: 144px;
+    width: 162px;
     h1 {
-        
         height: 153px;
         font-size: 90px;
         font-weight: bold;
@@ -52,10 +51,7 @@
         overflow: hidden;
         width: fit-content;
         text-align: center;
-        justify-self: center;
         font-family: "Roboto Mono", monospace;
-        font-optical-sizing: auto;
-        font-style: normal;
     }
 }
 
@@ -145,6 +141,7 @@
     }
 
     .logoUdoContainer {
+        width: 108px;
         h1 {
             height: 79px;
             font-size: 60px;

@@ -6,7 +6,7 @@ import { Modal } from "../../../shared/ui/modal/modal";
 import { Button } from "../../../shared/ui/button/button";
 import { handleTG } from "../../../features/handleTG/handleTG";
 import gif_6 from "/gif/duck6.gif";
-import telegram from "/svg/telegram.svg";
+import icons_tg from "/icons/icon_tg.png";
 
 export const MainStart = () => {
   
@@ -36,7 +36,7 @@ export const MainStart = () => {
 
       <Modal isOpen={modal} className={styles.modalContent}>
         <span onClick={() => setModal(false)}>x</span>
-        <img loading="lazy" src={gif_6} alt="gifDucks6" className={styles.gif6Dugs} />
+        <img src={gif_6} alt="gifDucks6" className={styles.gif6Dugs} />
         <p>{t('mainModalDescription')}</p>
         <Button
           onClick={() => {
@@ -44,7 +44,7 @@ export const MainStart = () => {
             setModal(false);
           }}
         >
-          <img loading="lazy" src={telegram} alt="" /> Telegram
+          <img src={icons_tg} alt="telegram" /> Telegram
         </Button>
       </Modal>
     </main>

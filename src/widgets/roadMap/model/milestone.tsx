@@ -3,7 +3,7 @@ import { TMilestoneProps } from "./types";
 
 export const Milestone = ({ iconSrc, text, color }: TMilestoneProps) => (
   <div className={styles.milestone} style={{backgroundColor: color}}>
-    {iconSrc && <img loading="lazy" src={iconSrc} alt="" className={styles.milestoneIcon}/>}
+    {iconSrc && <img src={iconSrc} alt="roadmap_cells_icons" className={styles.milestoneIcon}/>}
 
     <h2>{text}</h2>
   </div>

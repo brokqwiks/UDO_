@@ -19,12 +19,12 @@ export const CommunityCard = ({
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <img loading="lazy" src={icon} alt="" />
+      <img src={icon} alt="" />
       <h1>{name}</h1>
       <p style={{ width: i18n.language == "en" ? "255px" : "336px" }}>
         {descr}
       </p>
-      <a href={url} target="_blank" id="123">
+      <a href={url} target="_blank" id="123" rel="noopener noreferrer">
         {aboutBtn}
         <span
           style={{
