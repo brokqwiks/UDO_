@@ -1,3 +1,4 @@
+
 .mainSection {
     display: flex;
     justify-content: center;
@@ -13,9 +14,8 @@
         margin: 0 auto;
         margin-bottom: 64px;
         font-size: 30px;
-        font-weight: 600;
-        color: #333;
-
+        font-weight: 700;
+        color: black;
     }
 
     button {
@@ -42,28 +42,23 @@
 
 .logoUdoContainer {
     display: inline-block;
-    width: 144px;
+    width: 162px;
     h1 {
-        
+        width: fit-content;
         height: 153px;
         font-size: 90px;
-        font-weight: bold;
-        white-space: nowrap;
-        overflow: hidden;
-        width: fit-content;
         text-align: center;
-        justify-self: center;
         font-family: "Roboto Mono", monospace;
-        font-optical-sizing: auto;
-        font-style: normal;
+        font-weight: 700;
+        overflow: hidden;
     }
 }
 
 .highlight {
-    display: block;
     margin-bottom: 28px;
     font-size: 90px;
-    font-weight: bold;
+    font-weight: 700;
+    color: aquamarine;
     background-image: linear-gradient(90deg, #0066FF, #01D1FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -124,10 +119,119 @@
     }
 }
 
+@media screen and (max-width: 1025px) {
+    .mainSection {
+        padding-top: 137px;
+        margin-bottom: 61px;
+    }
+
+    .logoUdoContainer {
+        width: 108px;
+        h1 {
+            height: 79px;
+            font-size: 60px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .highlight {
+        display: block;
+        margin-bottom: 18px;
+        font-size: 60px;
+    }
+
+
+    .mainContent {
+        p {
+            width: 410px;
+            margin-bottom: 42px;
+            font-size: 20px;
+        }
+
+        button {
+            width: 184px;
+            height: 53px;
+            font-size: 24px;
+        }
+    }
+
+    .modalContent {
+        width: 95%;
+        height: 350px;
+        border-radius: 10px;
+    
+        .gif6Dugs {
+            width: 30%;
+            height: 130px;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            width: 80%;
+            font-size: 23px;
+            margin-bottom: 30px;
+        }
+    
+        button {
+            width: 60%;
+            height: 45px;
+            border-radius: 10px;
+            font-size: 20px;
+    
+            img {
+                width: 25px;
+                height: 25px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .mainSection {
+        padding-top: 146px;
+        margin-bottom: 80px;
+    }
+
+    .logoUdoContainer {
+        width: 162px;
+        h1 {
+            height: 95px;
+            font-size: 72px;
+        }
+    }
+
+    .highlight {
+        margin-bottom: 22px;
+        font-size: 62px;
+    }
+    
+    .mainContent {
+        p {
+            width: 74%;
+            margin-bottom: 50px;
+            font-size: 24px;
+        }
+
+        button {
+            width: 200px;
+            height: 54px;
+            font-size: 25px;
+        }
+    }
+}
+
+
+
 @media screen and (max-width: 480px) {
     .mainSection {
         padding-top: 146px;
         margin-bottom: 80px;
+    }
+
+    .highlight {
+        margin-bottom: 10px;
+        font-size: 50px;
     }
 
     .mainContent {
@@ -144,47 +248,47 @@
         }
     }
 
-    .logoUdoContainer {
-        h1 {
-            height: 79px;
-            font-size: 60px;
-            margin-bottom: 0px;
-        }
-    }
-
-    .highlight {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 50px;
-    }
+   
     .modalContent {
         width: 85%;
-        height: 350px;
-        border-radius: 10px;
     
         .gif6Dugs {
             width: 35%;
-            height: 130px;
-            margin-bottom: 20px;
         }
     
         p {
-            width: 80%;
             font-size: 20px;
-            margin-bottom: 30px;
         }
     
         button {
-            width: 60%;
             height: 35px;
-            border-radius: 10px;
             font-size: 17px;
     
             img {
-                width: 18px;
-                height: 18px;
-                margin-right: 10px;
+                width: 20px;
+                height: 20px;
             }
+        }
+    }
+}
+@media screen and (max-width: 368px) {
+    .mainSection {
+        padding-top: 120px;
+    }
+    .highlight {
+        font-size: 45px;
+    }
+    .logoUdoContainer {
+        width: 139px;
+        h1 {
+            height: 70px;
+            font-size: 58px;
+        }
+    }
+    .mainContent {
+        p {
+            font-size: 13px;
+            margin-bottom: 18px;
         }
     }
 }

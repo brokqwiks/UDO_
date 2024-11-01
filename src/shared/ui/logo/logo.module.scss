@@ -1,11 +1,22 @@
 .logo {
     display: flex;
     align-self: center;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
     img{
-        height: 70px;
-        align-self: center;
+        width: 122px;
+        height: 65px;
     }
 
+}
+@media screen and (max-width: 1025px) {
+    .logo {
+        img {
+            width: 100%;
+            height: 60px;
+        }
+    }
 }
 @media screen and (max-width: 480px) {
     .logo {

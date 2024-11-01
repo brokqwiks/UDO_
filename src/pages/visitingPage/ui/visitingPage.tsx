@@ -14,6 +14,7 @@ export const VisitingPage = () => {
     <>
       <div className={styles.visitingPageWhiteContainer}>
         <Header />
+        
         <MainStart />
 
          <About />

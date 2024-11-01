@@ -12,7 +12,7 @@
 }
 
 .aboutHeader {
-    h1 {
+    h2 {
         font-weight: 800;
         font-size: 80px;
         word-spacing: 15px;
@@ -20,11 +20,11 @@
     }
 
     p {
-        width: 720px;
+        width: 86%;
         font-size: 30px;
         margin-bottom: 40px;
         font-weight: 700;
-        color: #333;
+        color: black;
 
     }
 }
@@ -43,7 +43,7 @@
     display: flex;
 
     button {
-        width: 200px;
+        width: 24%;
         height: 84px;
         display: flex;
         justify-content: center;
@@ -59,7 +59,7 @@
         cursor: pointer;
 
         &:first-child {
-            margin-right: 45px;
+            margin-right: 5.4%;
             background: #00A3FF;
             color: white;
 
@@ -71,17 +71,18 @@
         }
 
         &:last-child {
-            margin-left: 45px;
+            margin-left: 5.4%;
         }
 
         &:hover {
             background: #00A3FF;
             color: white;
         }
-
         img {
-            background: transparent;
-            margin-left: 5px;
+            width: 44px;
+            height: 44px;
+                background: transparent;
+                margin-left: 5px;
         }
     }
 }
@@ -89,64 +90,231 @@
 
 .gifBlock {
     position: relative;
-    margin-left: 189px;
+    margin-left: 12%;
 
-    img {
-        width: 400px;
-        height: 400px;
+    video {
+        width: 380px;
+        height: 380px;
         justify-self: center;
         align-self: center;
+        background: transparent;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1441px) {
+    .aboutHeader {
+        h2 {
+            font-size: 70px;
+            word-spacing: 7px;
+        }
+
+    }
+
+    .gifBlock {
+        margin-left: 2%;
+
+        video {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .aboutButtons {
+        button {
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
     .about {
-        margin-bottom: 105px;
-        padding-top: 80px;
+        margin-bottom: 96px;
+        padding-top: 135px;
+    }
+
+    .aboutContainer {
+        width: 460px;
     }
 
     .aboutHeader {
         width: 100%;
+        margin-top: 39px;
+
         .aboutText {
-            margin-right: 10px;
+            margin-right: 15px;
         }
-        h1 {
-            font-size: 28px;
+
+        h2 {
+            font-size: 42px;
             word-spacing: 0px;
             margin-bottom: 12px;
         }
-        
+
 
         p {
-            width: 210px;
-            font-size: 14px;
-            font-weight: 700;
-            margin-bottom: 15px;
+            width: 90%;
+            font-size: 16px;
+            margin-bottom: 28px;
         }
     }
 
-    
+    .aboutButtons {
+
+        button {
+            width: 136px;
+            height: 44px;
+            border-radius: 8px;
+            border: 2px solid #00A3FF;
+            font-size: 20px;
+
+            &:first-child {
+                margin-right: 5%;
+
+                &:hover {
+                    background: white;
+                    color: #000;
+                    padding-left: 40px;
+                }
+            }
+
+            &:last-child {
+                margin-left: 5%;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .gifBlock {
+        margin-left: 8%;
+
+        video {
+            width: 255px;
+            height: 255px;
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .about {
+        display: block;
+        padding-top: 95px;
+        margin-bottom: 94px;
+    }
+
+    .aboutContainer {
+        width: 100%;
+    }
+
+    .aboutHeader {
+        width: 100%;
+        margin-top: 0;
+
+        .aboutText {
+            margin-right: 2%;
+        }
+
+        h2 {
+            font-size: 48px;
+        }
+
+        p {
+            width: 80%;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+    }
 
     .aboutButtonsMobileAdaptiv {
         display: block;
 
-        .buttoRocket{
-            width: 100%;
-            margin-bottom: 10px;
+        .buttoRocket {
+            width: 99%;
+            margin-bottom: 15px;
             display: flex;
             justify-content: center;
             align-items: center;
             background: #00A3FF;
             color: white;
-            &:hover{
-                padding-left: 30px;
+
+            &:hover {
+                padding-left: 44px;
                 background: white;
                 color: black;
             }
+
+            img {
+                width: 36px;
+                height: 36px;
+                margin-left: 8px;
+            }
+        }
+
+        button {
+            width: 48%;
+            height: 56px;
+            border-radius: 10px;
+            border: 2px solid #00A3FF;
+            background: white;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+            transition: .5s;
+            cursor: pointer;
+
+            &:last-child {
+                margin-left: 3%;
+            }
+        }
+    }
+
+    .gifBlock {
+        margin-top: 15px;
+        margin-left: 0;
+
+        video {
+            display: block;
+            margin: 0 auto;
+            width: 246px;
+            height: 258px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 481px) {
+    .about {
+        display: flex;
+        margin-bottom: 105px;
+        padding-top: 80px;
+    }
+
+    .aboutHeader {
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            width: 210px;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .aboutButtonsMobileAdaptiv {
+        .buttoRocket {
+            &:hover {
+                padding-left: 30px;
+            }
+
             img {
                 width: 26px;
                 height: 26px;
-                background: transparent;
                 margin-left: 4px;
             }
         }
@@ -154,27 +322,39 @@
         button {
             width: 47%;
             height: 38px;
-            border-radius: 10px;
-            border: 2px solid #00A3FF;
-            background: white;
-            color: black;
             font-size: 16px;
-            font-weight: 700;
-            transition: .5s;
-            cursor: pointer;
-            &:last-child{
+
+            &:last-child {
                 margin-left: 10px;
             }
         }
     }
 
     .gifBlock {
-        margin-left: 10px;
-        img {
-            width: 125px;
-            height: 125px;
-            justify-self: center;
-            align-self: center;
+        margin-left: 7%;
+
+        video {
+            width: 100%;
+            height: 87%;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .aboutHeader {
+        h2 {
+            font-size: 32px;
+        }
+
+        p {
+
+            width: 90%;
+        }
+    }
+
+    .aboutButtonsMobileAdaptiv {
+        button {
+            width: 48%;
         }
     }
 }

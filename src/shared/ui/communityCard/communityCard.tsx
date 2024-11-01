@@ -1,7 +1,6 @@
-import { useState } from "react";
 import styles from "./communityCard.module.scss";
+import { useCommunityCard } from "../../lib/useCommunityCard";
 import { TCommunityCard } from "../../types/TCommunityCard";
-import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 
 export const CommunityCard = ({
   icon,
@@ -10,8 +9,8 @@ export const CommunityCard = ({
   url,
   aboutBtn,
 }: TCommunityCard) => {
-  const [hover, setHover] = useState(false);
-  const { i18n } = useMyTranslate();
+  
+  const { hover, setHover, windowWidth, paragraphWidth } = useCommunityCard();
 
   return (
     <article
@@ -19,25 +18,21 @@ export const CommunityCard = ({
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <img loading="lazy" src={icon} alt="" />
+      <img src={icon} alt="name" />
+
       <h1>{name}</h1>
-      <p style={{ width: i18n.language == "en" ? "255px" : "336px" }}>
-        {descr}
-      </p>
-      <a href={url} target="_blank" id="123">
+
+      <p style={{ width: paragraphWidth }}>{descr}</p>
+
+      <a href={url} target="_blank" id="123" rel="noopener noreferrer">
         {aboutBtn}
         <span
           style={{
-            display: "inline-block",
-            transform:
-              window.screen.width > 480
-                ? hover
-                  ? "translateX(20px)"
-                  : "translateX(0)"
-                : hover
-                ? "translateX(7px)"
-                : "translateX(0)",
-            transition: "transform 0.3s ease-in-out",
+            transform: hover
+              ? windowWidth > 1025
+                ? "translateX(20px)"
+                : "translateX(7px)"
+              : "translateX(0)",
           }}
         >
           {" >"}
@@ -46,4 +41,3 @@ export const CommunityCard = ({
     </article>
   );
 };
-

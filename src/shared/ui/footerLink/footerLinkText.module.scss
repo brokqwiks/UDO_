@@ -1,0 +1,28 @@
+.footerLinkText{
+    font-size: 25px;
+    font-weight: 700;
+    color: #F3F4FF;
+}
+@media screen and (max-width: 1025px) {
+    .footerLinkText {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .footerLinkText {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footerLinkText {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .footerLinkText {
+        font-size: 11px;
+    }
+}

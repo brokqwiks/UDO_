@@ -1,0 +1,58 @@
+.footerLinkCircle {
+    display: inline-block;
+    margin-right: 35px;
+    transition: .3s ease-in-out;
+
+    img {
+        width: 58px;
+        height: 58px;
+    }
+    &:hover {
+        scale: 1.06;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .footerLinkCircle {
+        margin-right: 19px;
+        width: 34px;
+        height: 34px;
+            img {
+                width: 34px;
+                height: 34px;
+            }
+        }
+        
+    }
+
+
+@media screen and (max-width: 770px) {
+    .footerLinkCircle {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footerLinkCircle {
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .footerLinkCircle {
+        width: 17px;
+        height: 17px;
+
+        img {
+            width: 17px;
+            height: 17px;
+        }
+    }
+}

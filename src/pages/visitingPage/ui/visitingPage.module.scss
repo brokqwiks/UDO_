@@ -3,11 +3,24 @@
     width: 1428px;
     margin: 0 auto;    
 }
+@media screen and (max-width: 1441px) {
+    .visitingPageWhiteContainer{
+        width: 94%;
+        margin: 0;
+        margin-left: 3%;
+    }
+}
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1025px) {
     .visitingPageWhiteContainer{
         width: 100%;
-        margin: 0;
+        margin-left: 6%;
+        padding-right: 12%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .visitingPageWhiteContainer{
         margin-left: 25px;
         padding-right: 50px;
     }
@@ -18,20 +31,40 @@
     padding-top: 24px;
     background-color: #0e0f1d;
     .visitingPageBlack{
+        display: block;
         width: 1428px;
         margin: 0 auto;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1441px) {
+    .visitingPageBlackContainer{
+        .visitingPageBlack{
+            width: 94%;
+            margin: 0;
+            margin-left: 3%;
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
     .visitingPageBlackContainer{
         .visitingPageBlack{
             width: 100%;
+            margin-left: 6%;
+            padding-right: 12%;
+        }
+    }
+}
+@media screen and (max-width: 770px) {
+    .visitingPageBlackContainer{
+        .visitingPageBlack{
             margin-left: 25px;
             padding-right: 50px;
         }
     }
 }
+
 
 .dottedBlue{
     display: block;

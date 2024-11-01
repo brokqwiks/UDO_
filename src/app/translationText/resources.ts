@@ -18,7 +18,7 @@ export const resources = {
 
         "sectionCommunityTitle": 'Community',
         "sectionCardTGDesc": 'News and basic communication with the community',
-        "sectionCardGitHubDesc": 'Open source is the first argument for our security',
+        "sectionCardGitHubDesc": 'Open source code in our project is the first argument for security',
         "sectionCardTwitterDesc": 'News and basic communication with the community', 
         "sectionCardButtonSubscribe": 'Subscribe',
         "sectionCardButtonLearnCode": 'Learn code',
@@ -98,7 +98,7 @@ export const resources = {
         "sectionLearnButtonSmartContractMobileAdaptiv": 'Контракты',
         "sectionLearnButtonSecurityWallet": 'Секретный кошелёк',
         "sectionLearnButtonSecurityWalletMobileAdaptiv": 'Кошелёк',
-        "sectionLearnButtonDefi": 'Децентрилизация',
+        "sectionLearnButtonDefi": 'Децентрализация',
         "sectionLearnButtonDefiMobileAdaptiv": 'Дефай',
         
         "sectionLearnFAQ": 'Больше информации в нашем',

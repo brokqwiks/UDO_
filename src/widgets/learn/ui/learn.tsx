@@ -1,22 +1,17 @@
 import styles from "./learn.module.scss";
-import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
 import { useLearnLogic } from "../model/useLearnLogic";
-import { Button } from "../../../shared/ui/button";
-import app from "/svg/app.svg";
-import block from "/svg/block.svg";
-import contact from "/svg/contract.svg";
-import toncoin2 from "/svg/toncoin2.svg";
+import { LearnButton } from "../../../shared/ui/learnButton";
+import icon_learn from "/svg/icon_learn.svg";
 
 export const Learn = () => {
-  const { t, i18n } = useMyTranslate();
-  const { selectedDescription, handleDescriptionClick, buttonRef } =
+  const { selectedDescription, t, i18n, isTablet, learnButtonData } =
     useLearnLogic();
 
   return (
     <section className={styles.learnContainer}>
       <div className={styles.learnHeading}>
-        <h2>{t("sectionLearnTitle")}</h2>
-        <img loading="lazy" src={app} alt="" />
+        <h3>{t("sectionLearnTitle")}</h3>
+        <img src={icon_learn} alt="icon_learn" />
       </div>
 
       <p className={styles.learnProtectText}>{t("sectionLearnDescription")}</p>
@@ -24,53 +19,28 @@ export const Learn = () => {
       <aside className={styles.learnMainInfoAndImg}>
         <div
           className={
-            window.screen.width > 480
+            isTablet >= 769
               ? styles.learnContent
               : styles.learnContentMobileAdaptiv
           }
         >
           <div className={styles.learnBtnsAndFAQ}>
             <div className={styles.learnBtnsContainer}>
-              <Button
-                className={styles.learnButton}
-                refButton={buttonRef}
-                onClick={() => {
-                  handleDescriptionClick(0);
-                }}
-              >
-                <img src={contact} />
-
-                {window.screen.width > 480
-                  ? t("sectionLearnButtonSmartContract")
-                  : t("sectionLearnButtonSmartContractMobileAdaptiv")}
-              </Button>
-
-              <Button
-                onClick={() => handleDescriptionClick(1)}
-                className={styles.learnButton}
-              >
-                <img src={toncoin2} />
-
-                {window.screen.width > 480
-                  ? t("sectionLearnButtonSecurityWallet")
-                  : t("sectionLearnButtonSecurityWalletMobileAdaptiv")}
-              </Button>
-
-              <Button
-                onClick={() => handleDescriptionClick(2)}
-                className={styles.learnButton}
-              >
-                <img src={block} alt="defi" />
-                
-                {window.screen.width > 480
-                  ? t("sectionLearnButtonDefi")
-                  : t("sectionLearnButtonDefiMobileAdaptiv")}
-              </Button>
+              {learnButtonData.map((button) => (
+                <LearnButton key={button.id} {...button} />
+              ))}
             </div>
 
-            {window.screen.width > 480 && (
+            {isTablet > 769 && (
               <p>
-                {t("sectionLearnFAQ")} <a href="#">FAQ</a>
+                {t("sectionLearnFAQ")} {""}
+                <a
+                  href="https://spicy-plot-110.notion.site/Smart-Contracts-11f9787787f180d9856acdee66c3a4f8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  FAQ
+                </a>
               </p>
             )}
           </div>
@@ -79,19 +49,17 @@ export const Learn = () => {
             className={styles.learnInfo}
             style={{
               height:
-                i18n.language == "ru" || window.screen.width > 480
-                  ? "670px"
-                  : "605px",
+                i18n.language == "ru" || isTablet > 480 ? "670px" : "607px",
             }}
           >
-            <h3>{selectedDescription.title}</h3>
+            <h4>{selectedDescription.title}</h4>
             <p>{selectedDescription.paragraf1}</p>
             <p>{selectedDescription.paragraf2}</p>
           </div>
         </div>
 
         <div className={styles.learnImg}>
-          <img loading="lazy" src={selectedDescription.imgDescription} alt="" />
+          <img src={selectedDescription.imgDescription} alt="Img description" />
         </div>
       </aside>
     </section>

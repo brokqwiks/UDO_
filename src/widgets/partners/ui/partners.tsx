@@ -1,53 +1,63 @@
 import styles from "./partners.module.scss";
-import { useModal } from "../../../shared/ui/modal/useModal";
 import { useMyTranslate } from "../../../app/translationText/useMyTranslate";
+import { usePartners } from "../model/usePartners";
 import { Modal } from "../../../shared/ui/modal/modal";
 import { Button } from "../../../shared/ui/button";
-import { handleTG } from "../../../features/handleTG/handleTG";
-import gif_7 from "/gif/duck7.gif";
-import partners_icon_users from "/svg/partners_icon_users.svg";
-import telegram from "/svg/telegram.svg";
-import ton_nest_lvl2 from "/icons/ton_nest_lvl2.jpg";
-import add_new_partners from "/icons/add_new_partners.png";
-import move_partner from "/icons/move_partner.jpg"
+import { Cross } from "../../../shared/ui/cross/cross";
+import duck_7 from "/duck/duck7.webm";
+import icon_partners from "/svg/icon_partners.svg";
+import icon_tg from "/svg/icon_telegram.svg";
+import add_new_partners from "/icons/add_new_partners.webp";
 
 export const Partners = () => {
+  const { t } = useMyTranslate();
 
-  const {modal, setModal} = useModal()
-  const {t} = useMyTranslate()
+  const {
+    modal,
+    setModal,
+    partnersData,
+    handleModalToggle,
+    handleSupportClick,
+  } = usePartners();
 
   return (
     <section className={styles.partnersContainer}>
-
       <div className={styles.partnersHeading}>
-        <h2>{t('sectionOurPartners')}</h2>
-        <img loading="lazy" src={partners_icon_users} alt="partners_icon_users" />
+        <h3>{t("sectionOurPartners")}</h3>
+        <img src={icon_partners} alt="Our partners" />
       </div>
 
       <div className={styles.allPartners}>
-        <a href="https://eco.ton.org/en/opportunities/ton-nest" target="_blank"><img loading="lazy" src={ton_nest_lvl2} alt="ton_nest" /></a>
-        <a href="https://t.me/moveonton" target="_blank"  ><img loading="lazy" src={move_partner} alt="move_partner" /></a>
-        <Button onClick={() => setModal(!modal)}>
-          <img loading="lazy" src={add_new_partners} alt="add_new_partners" />
-        </Button>
+        {partnersData.map(({ id, href, src, alt }) => (
+          <a key={id} href={href} target="_blank" rel="noopener noreferrer">
+            <img src={src} alt={alt} />
+          </a>
+        ))}
 
+        <Button
+          title="Станьте нашим партнёром!"
+          textForScreenReaders="Станьте нашим партнёром"
+          onClick={handleModalToggle}
+        >
+          <img src={add_new_partners} alt="Add new partners" />
+        </Button>
       </div>
 
       <Modal isOpen={modal} className={styles.modalContentPartners}>
-          <span onClick={() => setModal(false)}>x</span>
-          <img loading="lazy" src={gif_7} alt="gif_7_dugs" className={styles.gif7Dugs} />
-          <Button
-            onClick={() => {
-              handleTG();
-              setModal(false);
-            }}
-          >
-            <img loading="lazy" src={telegram} alt="telegram" /> 
-            Telegram
-          </Button>
-          <p>{t('sectionModalOurPartners')}</p>
+        <span>
+          <Cross setCross={setModal} />
+        </span>
+        <video autoPlay muted loop src={duck_7} className={styles.gif7Dugs} />
+        <Button
+          title="Связаться с службой поддержки"
+          textForScreenReaders="Связаться с службой поддержки"
+          onClick={handleSupportClick}
+        >
+          <img src={icon_tg} alt="Telegram" />
+          Telegram
+        </Button>
+        <p>{t("sectionModalOurPartners")}</p>
       </Modal>
-      
     </section>
   );
 };

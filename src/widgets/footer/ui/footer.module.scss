@@ -13,14 +13,34 @@
             color: #F3F4FF;
         }
 
-        img {
-            margin-right: 35px;
+        .twitterIcon {
+            margin-right: 0;
         }
+    }
+}
 
-        p {
-            font-size: 25px;
-            font-weight: 800;
-            color: #F3F4FF;
+@media screen and (max-width: 1025px) {
+    .footer {
+        padding-bottom: 39px;
+
+        .footerContant {
+            margin-top: 25px;
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .footer {
+        .footerContant {
+            margin-top: 34px;
+
+            h2 {
+                font-size: 15px;
+            }
         }
     }
 }
@@ -28,20 +48,23 @@
 @media screen and (max-width: 480px) {
     .footer {
         padding-bottom: 24px;
+
         .footerContant {
             margin-top: 12px;
-    
+
             h2 {
                 font-size: 13px;
             }
-            img {
-                margin-right: 6px;
-                width: 20px;
-                height: 20px;
-            }
-    
-            p {
-                font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .footer {
+        .footerContant {
+
+            h2 {
+                font-size: 12px;
             }
         }
     }

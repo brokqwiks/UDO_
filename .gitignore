@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 *.svg text eol=lf
-
+*.sw?
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

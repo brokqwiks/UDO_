@@ -6,6 +6,7 @@ export const Modal = ({ children, isOpen, className }: TModal) => {
     <div
       className={styles.modal}
       style={{
+        display: isOpen ? 'block' : 'none',
         opacity: isOpen ? 1 : 0,
         visibility: isOpen ? "visible" : "hidden",
         transition: "0.4s ease-in-out",

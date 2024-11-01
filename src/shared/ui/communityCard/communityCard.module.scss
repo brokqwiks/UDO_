@@ -1,5 +1,5 @@
 .cardMain {
-    width: 400px;
+    width: 28%;
     margin: 0 auto;
     margin-left: 0;
     padding-top: 35px;
@@ -13,7 +13,10 @@
         margin-right: 0;
     }
     img{
-        margin-bottom: 33px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+
     }
     h1 {
         font-size: 40px;
@@ -41,11 +44,63 @@
         &:hover {
             color: #018EFF
         }
+        span{
+            display: inline-block;
+            transition: transform .3s ease-in-out;
+     }
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1025px) {
     .cardMain{
         width: 100%;    
+        padding-top: 17px;
+        padding-bottom: 14px;
+        padding-left: 17px;
+        margin-right: 7%;
+
+        img{
+            width: 27px;
+            height: 27px;
+            margin-bottom: 18px;
+        }
+        h1{
+            font-size: 22px;
+            margin-bottom: 17px;
+        }
+        p{
+            font-size: 13px;
+            margin-bottom: 28px;
+        }
+        a{
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (max-width: 770px) {
+    .cardMain{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        margin-right: 61px;
+        margin-bottom: 40px;
+        img{
+            width: 45px;
+            height: 45px;
+        }
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 18px;
+        }
+        a{
+            font-size: 23px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cardMain{
         padding-top: 14px;
         padding-bottom: 10px;
         padding-left: 14px;
@@ -68,10 +123,13 @@
         }
         a{
             font-size: 18px;
-            span{
-                margin-right: 1px;
-            }
         }
     }
-    
+}
+@media screen and (max-width: 374px) {
+    .cardMain{
+        p{
+            width: 100px;
+        }
+    }
 }

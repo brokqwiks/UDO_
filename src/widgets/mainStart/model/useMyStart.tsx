@@ -1,33 +1,41 @@
-import { useEffect, useState } from "react";
-
+import { useEffect, useRef, useState } from "react";
+import { useModal } from "../../../shared/ui/modal/useModal";
+import { handleTG } from "../../../features/handleTG/handleTG";
 export const useMyStart = () => {
   const [displayedText, setDisplayedText] = useState("");
+  const {setModal} = useModal()
   const [isBlinked, setIsBlinked] = useState(true);
   const fullText = "UDO_"; // полный текст для вывода
+  const udoIndex = useRef(0)
 
   useEffect(() => {
-    let udoIndex = 0;
-    // Анимация для текста UDO_
     const udoInterval = setInterval(() => {
-      if (udoIndex < fullText.length) {
-        setDisplayedText(fullText.slice(0, udoIndex + 1)); // добавляем текст по одному символу
-        udoIndex++;
-      } else {
-        clearInterval(udoInterval); // Останавливаем интервал, когда весь текст выведен
-
-        const blinkInterval = setInterval(() => {
-          setIsBlinked((prev) => !prev);
-        }, 600); // изменяем каждые 600ms состояние на противоположное
-
-        return () => clearInterval(blinkInterval); // Останавливаем интервал, когда текст изменился на противоположное
+      if (udoIndex.current < fullText.length) {
+        setDisplayedText(fullText.slice(0, udoIndex.current + 1));
+        udoIndex.current++;
+      } else{
+        clearInterval(udoInterval)
+        startBlinkin()
       }
     }, 200);
 
     return () => clearInterval(udoInterval);
   }, [fullText]);
 
+  const startBlinkin = () => {
+    const blinkInterval = setInterval(() => {
+      setIsBlinked((prev) => !prev);
+    }, 600); // изменяем каждые 600ms состояние на противоположное
+
+    return () => clearInterval(blinkInterval); 
+  }
+ 
   const blinkedText = isBlinked ? displayedText : displayedText.slice(0, -1); 
-  // если isBlinked true, тогда мы отображаем весь текста, а иначе мы из этого всего текста удаляем последний элемент
   
-  return { displayedText: blinkedText };
+  
+  const handleSupportModal = () => {
+    handleTG();
+    setModal(false);
+  }
+  return { displayedText: blinkedText, handleSupportModal  };
 };

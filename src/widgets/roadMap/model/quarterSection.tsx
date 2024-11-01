@@ -8,7 +8,7 @@ export const QuarterSection = ({
 }: TQuarterSectionProps) => (
   <div className={styles.quarterSection}>
 
-    <h1>{quarter}</h1>
+    <h4>{quarter}</h4>
 
     <div className={styles.milestoneContainer}>
       {milestones.map((milestone, index) => (
